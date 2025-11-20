@@ -15,7 +15,8 @@
     <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@1.0.3"></script>
     <script src="https://unpkg.com/@jspsych/plugin-survey-multi-choice@2.0.0"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-    <script src="util.js"></script>
+    <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe@0.4"></script>
+        <script src="util.js"></script>
     <script src="scenarios.js"></script>
     <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
@@ -32,17 +33,9 @@
 
     })
     var modifier_list = ["本当に", "かなり", "少し", "ちょっと", "すごく"]
-
-    // Define `url_write_data_php` and `output_filename` for the `write_data_to_server` function
-    var subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID'); // <-- use URL variables?
-    if (!subject_id) {
-        subject_id = jsPsych.randomization.randomID(10);
-        /* console.log(`subject_id randomly assigned: ${subject_id}`); */
-    }
-    var output_filename = `data/subject_${subject_id}.json`;
-    // /* console.log(`Data will be saved to: ${url_experiment_dir + output_filename}`); */
-
-    // Initialize a timeline (just an empty array)
+    
+    const subject_id = jsPsych.randomization.randomID(10);
+    const filename = `${subject_id}.csv`;    // Initialize a timeline (just an empty array)
     var timeline = [];
 
     for (var i = 0; i < data.length; i++) {
@@ -68,7 +61,7 @@
     timeline = jsPsych.randomization.shuffle(timeline)
     var consent = {
         type: jsPsychExternalHtml,
-        url: "stimuli_jp/consent.html",
+        url: "consent.html",
         cont_btn: "agree",
     }
     var country = {
@@ -94,18 +87,20 @@
         html: '<p>Thank you very much for your participation!<br><br>Please let us know if you have any other comments.</p></br><textarea name="comments" rows="5" cols="50"></textarea><br><br><br>Please enter your Prolific ID. <input size = 15 name="prolific"></input></br>',
 
         button_label: 'Return to Prolific',
-        on_finish: function() {
-
-            write_data_to_server()
-            window.open('https://app.prolific.com/submissions/complete?cc=CW5DH5TQ&PROLIFIC_PID=' + subject_id)
-        }
     }
-
+    
+    const save_data = {
+        type: jsPsychPipe,
+        action: "save",
+        experiment_id: "0jPFoFItJAKu",
+        filename: filename,
+        data_string: ()=>jsPsych.data.get().csv()
+    };
     final_timeline.push(debrief)
+    final_timeline.push(save_data)
 
     // // Run the timeline
     jsPsych.run(final_timeline);
-    write_data_to_server()
 </script>
 
 </html>
