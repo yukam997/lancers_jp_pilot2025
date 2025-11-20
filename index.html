@@ -27,9 +27,6 @@
     // Initialize the jsPsych object (possibly with arguments: https://www.jspsych.org/7.3/reference/jspsych/)
     var jsPsych = initJsPsych({
         show_progress_bar: true,
-        on_trial_finish: function() {
-            write_data_to_server()
-        }
 
     })
     var modifier_list = ["本当に", "かなり", "少し", "ちょっと", "すごく"]
