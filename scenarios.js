@@ -72,13 +72,13 @@ const data = [
         "right_label": "As impolite as possible."
     },
     {
-        "scenarios": "Amy is sick in bed in her room, and her roommate Jake is practicing piano in the living room. Amy tells Jake, \"The sound is [modifier] loud,\" and asks him to turn down the volume.\n",
+        "scenarios": "Amy is playing games in her room, and her roommate Jake is practicing piano in the living room. Amy tells Jake, \"The sound is [modifier] loud,\" and asks him to turn down the volume.",
         "question": "How polite is Amy being?",
         "left_label": "As polite as possible",
         "right_label": "As impolite as possible."
     },
     {
-        "scenarios": "Amy is playing games in her room, and her roommate Jake is practicing piano in the living room. Amy tells Jake, \"The sound is [modifier] loud,\" and asks him to turn down the volume.",
+        "scenarios": "Amy is sick in bed in her room, and her roommate Jake is practicing piano in the living room. Amy tells Jake, \"The sound is [modifier] loud,\" and asks him to turn down the volume.\n",
         "question": "How polite is Amy being?",
         "left_label": "As polite as possible",
         "right_label": "As impolite as possible."
@@ -120,13 +120,13 @@ const data = [
         "right_label": "As impolite as possible."
     },
     {
-        "scenarios": "Tom and his housemate Jordan have invited their friends over. Tom tells Jordan, \"The sofa is [modifier] messy,\" and asks him to clean up his things before the guest arrives.",
+        "scenarios": "Tom and his housemate Jordan have invited their friends over. Tom tells Jordan, \"The sofa is [modifier] messy,\" and asks him to clean his things up before the guests arrive.",
         "question": "How polite is Tom being?",
         "left_label": "As polite as possible",
         "right_label": "As impolite as possible."
     },
     {
-        "scenarios": "Tom and his housemate Jordan have invited their friends over. While showing the coworker around the house, Tom tells Jordan, \"The sofa is [modifier] messy,\" and asks him to clean up his things.",
+        "scenarios": "Tom and his housemate Jordan have invited their friends over. While showing the coworker around the house, Tom tells Jordan, \"The sofa is [modifier] messy,\" and asks him to clean his things up.",
         "question": "How polite is Tom being?",
         "left_label": "As polite as possible",
         "right_label": "As impolite as possible."
@@ -138,7 +138,7 @@ const data = [
         "right_label": "As impolite as possible."
     },
     {
-        "scenarios": "Emma is in the living room of Chloe's apartment to work on a class assignment together. Emma enters Chloe's bedroom to borrow a desk lamp and says, \"The bedroom is messy.\"",
+        "scenarios": "Emma is in the living room of Chloe's apartment to work on a class assignment together. Emma enters Chloe's bedroom to borrow a desk lamp and says, \"The bedroom is [modifier] messy.\"",
         "question": "How polite is Emma being?",
         "left_label": "As polite as possible",
         "right_label": "As impolite as possible."
@@ -192,13 +192,13 @@ const data = [
         "right_label": "As impolite as possible."
     },
     {
-        "scenarios": "Anna tells Bill about his class presentation practice, \"The introduction was [modifier] long and everyone was getting bored,\" and suggests he make it more concise for the actual presentation.",
+        "scenarios": "Bill's gives a practive presentation in class. Afterwards, Anna says to Bill \"The introduction was [modifier] long and hard to follow\" and suggests him to be careful of timing in the actual presentation.",
         "question": "How polite is Anna being?",
         "left_label": "As polite as possible",
         "right_label": "As impolite as possible."
     },
     {
-        "scenarios": "Anna tells Bill about his class presentation practice, \"The introduction was [modifier] long and hard to follow,\" and suggests he make it more concise for the actual presentation.",
+        "scenarios": "Bill gives a presentation in class. As part of the peer-asessment process, Anna provides feedback saying \"The introduction was [modifier] long and hard to follow\" and suggests him to be careful of timing next time.",
         "question": "How polite is Anna being?",
         "left_label": "As polite as possible",
         "right_label": "As impolite as possible."
