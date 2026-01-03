@@ -35,7 +35,7 @@
     var participant_condition = parseInt(subject_id,36) %5
 
     // Define `url_write_data_php` and `output_filename` for the `write_data_to_server` function
-    var url_experiment_dir = "http://18.18.93.98:8004/"
+    // var url_experiment_dir = "http://18.18.93.98:8004/"
     var url_write_data_php = url_experiment_dir + 'write_data.php';
     var subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID'); // <-- use URL variables?
     if (!subject_id) {
