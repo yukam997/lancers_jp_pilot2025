@@ -128,7 +128,7 @@
         margin_vertical: '20px'
     }
 
-    var final_timeline = [consent].concat([instructions], timeline, [country]);
+    var final_timeline = [consent].concat([instructions], timeline.slice(0, 1), , [country]);
 
     var debrief = {
         type: jsPsychSurveyHtmlForm,
