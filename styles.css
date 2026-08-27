@@ -1,31 +1,40 @@
-/* .jspsych-html-slider-response-container { */
-/*     width: 80vw !important; */
-/* } */
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
 
-.container {
-    max-width: 800px;
+.stimulus {
+    font-size: 22px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-align: left;
+}
+
+.context-note {
+    font-size: 15px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 10px auto;
     text-align: left;
 }
 
 .jspsych-content {
-    /* text-align: left !important; */
+    max-width: 750px;
 }
 
-.jspsych-content-wrapper {
-    max-width: 800px !important;
-    /* text-align: left !important; */
-}
-
-/* .jspsych-html-slider-response-stimulus { */
-/*     text-align: left !important; */
-/* } */
-
-.scale {
-    text-align: center;
-    padding-top: 20px;
-    font-weight: bold;
-}
-.stimulus {
+.jspsych-survey-text-question {
+    margin: 20px auto;
     text-align: left;
-    /* line-height: 2; */
+    max-width: 700px;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 6px;
+    width: 300px;
+}
+
+textarea {
+    font-size: 16px;
 }
