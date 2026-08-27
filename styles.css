@@ -1,11 +1,11 @@
 body {
-    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-size: 18px;
     line-height: 1.8;
 }
 
 .stimulus {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 700px;
     margin: 0 auto 30px auto;
     text-align: left;
@@ -17,6 +17,10 @@ body {
     max-width: 700px;
     margin: 0 auto 10px auto;
     text-align: left;
+}
+
+.blank {
+    font-weight: bold;
 }
 
 .jspsych-content {

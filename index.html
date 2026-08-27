@@ -33,8 +33,8 @@
     var instructions = {
         type: jsPsychHtmlButtonResponse,
         stimulus:
-            '<p class="stimulus">In this study, you will read short Japanese scenarios. ' +
-            'Each one contains a blank, marked （　　　）, where a word or phrase has been removed.</p>' +
+            '<p class="stimulus">In this study, you will read short scenarios. ' +
+            'Each one contains a blank, marked [ ___ ], where a word or phrase has been removed.</p>' +
             '<p class="stimulus">Please read the scenario carefully and type the word or phrase you think ' +
             'most naturally fills the blank, given the situation described.</p>' +
             '<p class="stimulus">There are 66 scenarios in total. There are no right or wrong answers &mdash; ' +
@@ -47,13 +47,13 @@
     var shuffled_stimuli = jsPsych.randomization.shuffle(stimuli);
 
     var trials = shuffled_stimuli.map(function (s) {
-        var sentence_with_blank = s.sentence.replace('<modifier>', '<span class="blank">（　　　）</span>');
+        var sentence_with_blank = s.sentence.replace('<modifier>', '<span class="blank">[ ___ ]</span>');
         return {
             type: jsPsychSurveyText,
             questions: [
                 {
                     prompt: '<p class="stimulus">' + sentence_with_blank + '</p>' +
-                        '<p>上の（　　　）に入る言葉を書いてください。</p>',
+                        '<p>What word or phrase would you use to fill in the blank above?</p>',
                     rows: 1,
                     columns: 40,
                     required: true,
@@ -78,7 +78,7 @@
         button_label: 'Finish',
         on_finish: function () {
             // No server backend on GitHub Pages: save data as a local CSV download.
-            jsPsych.data.get().localSave('csv', 'modifier_experiment_' + subject_id + '.csv');
+            jsPsych.data.get().localSave('csv', 'modifier_experiment_en_' + subject_id + '.csv');
         }
     };
 
