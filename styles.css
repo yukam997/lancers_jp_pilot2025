@@ -1,11 +1,11 @@
 body {
-    font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
     font-size: 18px;
     line-height: 1.8;
 }
 
 .stimulus {
-    font-size: 20px;
+    font-size: 22px;
     max-width: 700px;
     margin: 0 auto 30px auto;
     text-align: left;
@@ -17,10 +17,6 @@ body {
     max-width: 700px;
     margin: 0 auto 10px auto;
     text-align: left;
-}
-
-.blank {
-    font-weight: bold;
 }
 
 .jspsych-content {
@@ -41,4 +37,42 @@ input[type="text"] {
 
 textarea {
     font-size: 16px;
+}
+
+.tag-container {
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-height: 20px;
+}
+
+.tag-label {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e8f0fe;
+    border: 1px solid #a9c6f7;
+    border-radius: 16px;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.tag-remove {
+    margin-left: 8px;
+    cursor: pointer;
+    color: #555;
+    font-weight: bold;
+}
+
+.tag-remove:hover {
+    color: #c00;
+}
+
+.tag-input {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
 }

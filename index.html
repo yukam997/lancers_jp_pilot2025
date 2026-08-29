@@ -9,7 +9,6 @@
     <link href="https://unpkg.com/jspsych@7.3.1/css/jspsych.css" rel="stylesheet" type="text/css" />
     <script src="https://unpkg.com/jspsych@7.3.1"></script>
     <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.2"></script>
-    <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.3"></script>
     <script src="https://unpkg.com/@jspsych/plugin-survey-html-form@1.0.3"></script>
     <script src="stimuli.js"></script>
     <link href="styles.css" rel="stylesheet" type="text/css" />
@@ -33,12 +32,13 @@
     var instructions = {
         type: jsPsychHtmlButtonResponse,
         stimulus:
-            '<p class="stimulus">In this study, you will read short scenarios. ' +
-            'Each one contains a blank, marked [ ___ ], where a word or phrase has been removed.</p>' +
-            '<p class="stimulus">Please read the scenario carefully and write as many words or phrases as you ' +
+            '<p class="stimulus">In this study, you will read short Japanese scenarios. ' +
+            'Each one contains a blank, marked ＿＿＿, where a word or phrase has been removed.</p>' +
+            '<p class="stimulus">Please read the scenario carefully and type as many words or phrases as you ' +
             'can think of that would naturally fill the blank, given the situation described. ' +
-            'Write one option per line &mdash; you can list as few or as many as you like.</p>' +
-            '<p class="stimulus">There are 66 scenarios in total. There are no right or wrong answers &mdash; ' +
+            'After typing each option, press Enter to add it as its own tag &mdash; ' +
+            'you can add as few or as many as you like.</p>' +
+            '<p class="stimulus">There are 36 scenarios in total. There are no right or wrong answers &mdash; ' +
             'we are interested in your intuitive judgment.</p>' +
             '<b>When you are ready to begin, press the start button.</b>',
         choices: ['Start'],
@@ -48,25 +48,75 @@
     var shuffled_stimuli = jsPsych.randomization.shuffle(stimuli);
 
     var trials = shuffled_stimuli.map(function (s) {
-        var sentence_with_blank = s.sentence.replace('<modifier>', '<span class="blank">[ ___ ]</span>');
+        var sentence_with_blank = s.sentence.replace('<modifier>', '<span class="blank">＿＿＿</span>');
+        var collected_tags = [];
+
+        var trial_html =
+            '<p class="stimulus">' + sentence_with_blank + '</p>' +
+            '<p>上の＿＿＿に入る言葉を入力し、Enterキーを押してください。いくつでも追加できます。</p>' +
+            '<div id="tag-container" class="tag-container"></div>' +
+            '<input type="text" id="tag-input" class="tag-input" placeholder="言葉を入力してEnter" autocomplete="off">';
+
         return {
-            type: jsPsychSurveyText,
-            questions: [
-                {
-                    prompt: '<p class="stimulus">' + sentence_with_blank + '</p>' +
-                        '<p>List as many words or phrases as you can think of that fit the blank above (one per line).</p>',
-                    rows: 5,
-                    columns: 40,
-                    required: true,
-                    name: 'modifier_response'
-                }
-            ],
+            type: jsPsychHtmlButtonResponse,
+            stimulus: trial_html,
+            choices: ['Continue'],
             data: {
                 stimulus_id: s.id,
                 predicate: s.predicate,
                 context: s.context,
                 context_label: s.context_label,
                 sentence: s.sentence
+            },
+            on_load: function () {
+                var input = document.getElementById('tag-input');
+                var container = document.getElementById('tag-container');
+                var continue_btn = document.querySelector('.jspsych-btn');
+                continue_btn.disabled = true;
+                input.focus();
+
+                function render_tags() {
+                    container.innerHTML = '';
+                    collected_tags.forEach(function (tag, idx) {
+                        var tag_el = document.createElement('span');
+                        tag_el.className = 'tag-label';
+                        tag_el.textContent = tag;
+
+                        var remove_el = document.createElement('span');
+                        remove_el.className = 'tag-remove';
+                        remove_el.textContent = '×';
+                        remove_el.addEventListener('click', function () {
+                            collected_tags.splice(idx, 1);
+                            render_tags();
+                            continue_btn.disabled = collected_tags.length === 0;
+                        });
+
+                        tag_el.appendChild(remove_el);
+                        container.appendChild(tag_el);
+                    });
+                }
+
+                input.addEventListener('keydown', function (e) {
+                    // Ignore Enter presses that are part of IME composition
+                    // (e.g. confirming kanji conversion), not an actual submit.
+                    if (e.isComposing || e.keyCode === 229) {
+                        return;
+                    }
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        var val = input.value.trim();
+                        if (val.length > 0) {
+                            collected_tags.push(val);
+                            input.value = '';
+                            render_tags();
+                            continue_btn.disabled = false;
+                        }
+                    }
+                });
+            },
+            on_finish: function (data) {
+                data.modifier_response = collected_tags.join('; ');
+                data.modifier_response_list = collected_tags.slice();
             }
         };
     });
@@ -79,7 +129,7 @@
         button_label: 'Finish',
         on_finish: function () {
             // No server backend on GitHub Pages: save data as a local CSV download.
-            jsPsych.data.get().localSave('csv', 'modifier_experiment_en_' + subject_id + '.csv');
+            jsPsych.data.get().localSave('csv', 'modifier_experiment_' + subject_id + '.csv');
         }
     };
 

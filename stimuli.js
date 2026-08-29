@@ -1,464 +1,254 @@
 var stimuli = [
     {
-        "id": "混んでいる_honest",
-        "predicate": "混んでいる",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "Noticing that the restaurant his friend is about to go to is crowded, Daisuke honestly points it out for their sake: \"That place is <modifier> crowded, so you might want to go at a different time.\""
-    },
-    {
-        "id": "混んでいる_ambiguous",
-        "predicate": "混んでいる",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend who suggested a restaurant, Daisuke answers vaguely so they can decide for themselves: \"That place seems <modifier> crowded — is this still okay?\""
-    },
-    {
-        "id": "混んでいる_impressed",
-        "predicate": "混んでいる",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "Entering a restaurant he'd worried would be crowded, Daisuke says, surprised: \"It's not crowded <modifier>, glad I trusted it.\""
-    },
-    {
-        "id": "混んでいる_direct",
-        "predicate": "混んでいる",
-        "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how crowded the restaurant was, Daisuke answers frankly: \"It was <modifier> crowded.\""
-    },
-    {
-        "id": "混んでいる_irritated",
-        "predicate": "混んでいる",
-        "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "Wanting to go somewhere quiet, but instead taken to a place that's neither tasty nor anything but crowded, Daisuke irritably tells the friend who chose it: \"It's <modifier> crowded, and the food's not even good. Next time actually check before bringing me somewhere.\""
-    },
-    {
-        "id": "混んでいる_encourage",
-        "predicate": "混んでいる",
-        "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a friend worried about a place being crowded, Daisuke, though he suspects it might be true, denies it and reassures them a little: \"It's not <modifier> crowded — there are still seats, it's totally fine.\""
-    },
-    {
-        "id": "高い_honest",
-        "predicate": "高い",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a colleague who asked for advice on a new product's pricing, Daisuke honestly points it out for their sake: \"That price point might be <modifier> high.\""
-    },
-    {
-        "id": "高い_ambiguous",
-        "predicate": "高い",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend consulting him about a restaurant budget, Daisuke answers vaguely so they can decide: \"That place is <modifier> expensive, but it's fine to splurge once in a while.\""
-    },
-    {
-        "id": "高い_impressed",
-        "predicate": "高い",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "Regarding the price of the dish, Daisuke says, impressed: \"This dish is so delicious, and yet it's not expensive <modifier>! Amazing value.\""
-    },
-    {
-        "id": "高い_direct",
-        "predicate": "高い",
-        "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how expensive the restaurant was, Daisuke answers frankly: \"It was <modifier> expensive.\""
-    },
-    {
-        "id": "高い_irritated",
-        "predicate": "高い",
-        "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About a disappointing service, Daisuke irritably tells the staff: \"I paid <modifier> a lot of money for this, and this service isn't worth it. Can I get a refund?\""
-    },
-    {
-        "id": "高い_encourage",
-        "predicate": "高い",
-        "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a friend worried about the price, Daisuke, though he suspects it might be true, denies it and reassures them a little: \"It's not <modifier> expensive — for what you get, it's actually a bargain.\""
-    },
-    {
-        "id": "遅い_honest",
-        "predicate": "遅い",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "Regarding a junior colleague's time in their first marathon, Daisuke honestly points it out for their sake: \"Relatively speaking it's <modifier> slow, but that's great for a first attempt.\""
-    },
-    {
-        "id": "遅い_ambiguous",
-        "predicate": "遅い",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a colleague consulting him about transportation, Daisuke answers vaguely so they can decide: \"The bus is <modifier> slower, but either way is fine.\""
-    },
-    {
-        "id": "遅い_impressed",
-        "predicate": "遅い",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "Surprised by how fast his junior colleague worked, Daisuke says, impressed: \"Not slow <modifier>! I was wrong. Well done.\""
-    },
-    {
-        "id": "遅い_direct",
-        "predicate": "遅い",
-        "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how slow the work was, Daisuke answers frankly: \"It was <modifier> slow.\""
-    },
-    {
-        "id": "遅い_irritated",
-        "predicate": "遅い",
-        "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "To a colleague who showed up significantly late to the meeting, Daisuke irritably says: \"You're <modifier> late — what time did you think we were meeting? Please actually be on time next time.\""
-    },
-    {
-        "id": "遅い_encourage",
-        "predicate": "遅い",
-        "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a junior colleague worried about being slow at the task, Daisuke, though he suspects it might be true, denies it and reassures them a little: \"The work isn't <modifier> slow — you're just not used to it yet, you'll speed up.\""
-    },
-    {
-        "id": "寒い_honest",
-        "predicate": "寒い",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a colleague who manages the meeting room's temperature, Daisuke honestly points it out for their sake: \"It's <modifier> cold in here, I think you should turn up the heat.\""
-    },
-    {
-        "id": "寒い_ambiguous",
-        "predicate": "寒い",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend consulting him about the temperature outside, Daisuke answers vaguely so they can decide: \"It's <modifier> cold, but you'll be fine if you wear a coat.\""
-    },
-    {
-        "id": "寒い_impressed",
-        "predicate": "寒い",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "About the warmth of the down jacket he bought, Daisuke says, impressed: \"This jacket is so thin, and yet it's not cold <modifier>! This brand really delivers on function.\""
-    },
-    {
-        "id": "寒い_direct",
-        "predicate": "寒い",
-        "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how cold it was outside, Daisuke answers frankly: \"It was <modifier> cold.\""
-    },
-    {
-        "id": "寒い_irritated",
-        "predicate": "寒い",
-        "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "To the colleague who manages the heater settings, Daisuke irritably says: \"It's <modifier> cold — can you please do something about it?\""
-    },
-    {
-        "id": "寒い_encourage",
-        "predicate": "寒い",
-        "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a colleague worried about the cold, Daisuke, though he suspects it might be true, denies it and reassures them a little: \"It's not <modifier> cold — you won't even notice once you're moving around.\""
-    },
-    {
-        "id": "汚い_honest",
-        "predicate": "汚い",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a colleague preparing for a client visit, Daisuke honestly points it out for their sake: \"It's <modifier> messy here, let's tidy up before the guests arrive.\""
-    },
-    {
-        "id": "汚い_ambiguous",
-        "predicate": "汚い",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend consulting him about the state of their accommodation, Daisuke answers vaguely so they can decide: \"It's <modifier> dirty, but it's within an acceptable range, I think.\""
-    },
-    {
-        "id": "汚い_impressed",
-        "predicate": "汚い",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "About the condition of a rental he toured, Daisuke says, impressed: \"I was worried since I heard the building is 30 years old, but it's so well-maintained that it's not dirty <modifier>! You can tell it's been taken good care of.\""
-    },
-    {
-        "id": "汚い_direct",
-        "predicate": "汚い",
-        "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how dirty the room was, Daisuke answers frankly: \"It was <modifier> dirty.\""
-    },
-    {
-        "id": "汚い_irritated",
-        "predicate": "汚い",
-        "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About a shared space that hasn't been cleaned, Daisuke irritably tells the colleague in charge: \"It's <modifier> dirty — can someone please clean it?\""
-    },
-    {
-        "id": "汚い_encourage",
-        "predicate": "汚い",
-        "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a friend worried about their room being messy, Daisuke, though he suspects it might be true, denies it and reassures them a little: \"It's not <modifier> dirty — a little tidying and it'll be totally fine.\""
-    },
-    {
-        "id": "不便_honest",
-        "predicate": "不便",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a friend who suggested a meeting spot, Daisuke honestly points it out for their sake: \"That place is <modifier> inconvenient to get to, maybe a different shop would be better.\""
-    },
-    {
-        "id": "不便_ambiguous",
-        "predicate": "不便",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend asking his opinion on a shop, Daisuke answers vaguely so they can decide: \"It's <modifier> inconvenient, but if Mika's fine with it, this place works for me.\""
-    },
-    {
-        "id": "不便_impressed",
-        "predicate": "不便",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "About the surrounding area of a property he toured, Daisuke says, impressed: \"I was worried since I heard it's a bit of a walk from the station, but there are so many shops nearby that it's not inconvenient <modifier>!\""
-    },
-    {
-        "id": "不便_direct",
-        "predicate": "不便",
-        "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how inconvenient the location was, Daisuke answers frankly: \"It was <modifier> inconvenient.\""
-    },
-    {
-        "id": "不便_irritated",
-        "predicate": "不便",
-        "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About how hard the newly introduced system is to use, Daisuke irritably tells the colleague in charge of the system: \"This is <modifier> inconvenient — can we please go back to the old way?\""
-    },
-    {
-        "id": "不便_encourage",
-        "predicate": "不便",
-        "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a colleague worried about how inconvenient a place is, Daisuke, though he suspects it might be true, denies it and reassures them a little: \"It's not <modifier> inconvenient — once you're used to it, you won't even notice.\""
-    },
-    {
-        "id": "面白い_honest",
+        "id": "面白い_warning",
         "predicate": "面白い",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a junior colleague who performed a comedy routine for feedback, Daisuke honestly tells them for their sake: \"That routine isn't <modifier> funny, you might want to try a different act.\""
+        "context": "warning",
+        "context_label": "力になりたいと思い、遠慮がちに指摘します。(warning)",
+        "sentence": "社内報に載せる連載記事の原稿をアキラが見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「中盤が<modifier>面白くない気がするから、そこにエピソードを一つ足したらどう？」"
     },
     {
-        "id": "面白い_ambiguous",
+        "id": "面白い_cautious",
         "predicate": "面白い",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend asking if he wants to go see a comedy duo, Daisuke answers vaguely so they can decide: \"I think manzai is <modifier> funny, but I'm not into it enough to go out of my way to see it.\""
+        "context": "cautious",
+        "context_label": "自分の意見を押し付けたくない+慎重に答えます。",
+        "sentence": "大輔は友人とどの映画を見るか話しています。自分の意見を押し付けたくない大輔は、慎重に答えます。「それ、映像は綺麗だけど、<modifier>面白くないらしい。」"
     },
     {
-        "id": "面白い_impressed",
+        "id": "面白い_agree",
         "predicate": "面白い",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "About a movie he watched, Daisuke says, impressed: \"That was <modifier> funny!\""
+        "context": "agree",
+        "context_label": "同調・認める・感謝する\nagree/acknowledge/thank",
+        "sentence": "友人が絶対面白いと言い、大輔をマイナー映画を観に誘います。半信半疑でついてきたのですが、本当感動し、友人に言います。「<modifier>面白かった。誘ってくれてありがとう」"
     },
     {
         "id": "面白い_direct",
         "predicate": "面白い",
         "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how interesting the movie was, Daisuke answers frankly: \"It was <modifier> interesting.\""
+        "context_label": "どれくらpredicateか聞かれ、率直に答えます",
+        "sentence": "上映後、大輔はまだその映画を見ていない同僚に、どれくらい面白かったか聞かれ、率直に答えます。「<modifier>面白かったです。後半は少し眠くなりましたけど」"
     },
     {
         "id": "面白い_irritated",
         "predicate": "面白い",
         "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About an event he'd been looking forward to, Daisuke irritably says: \"That was not interesting <modifier>.\""
+        "context_label": "（苛立って）キレ気味に答えます",
+        "sentence": "大輔は、楽しみにしていた劇を観に行ったのですが、隣の上司がいいところでいつもネタバレをしてくるので、キレて言います。「あなたのせいで、<modifier>面白くないんですけど。静かにしていただけますか？」"
     },
     {
         "id": "面白い_encourage",
         "predicate": "面白い",
         "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a friend worried about falling asleep during the movie, Daisuke reassures them a little: \"The movie was <modifier> interesting, but honestly, I couldn't stay awake till the end either.\""
+        "context_label": "励まします",
+        "sentence": "友人の提案で見に来た映画が少し退屈でした。提案したことを申し訳ないと思っている彼女を大輔が励まします。「<modifier>面白かったよ。みんなで映画館に一緒に行く機会ができただけでも嬉しいし。」"
     },
     {
-        "id": "美味しい_honest",
+        "id": "美味しい_warning",
         "predicate": "美味しい",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a friend asking how his cooking tasted, Daisuke honestly tells them for their sake: \"Honestly, it's not <modifier> tasty.\""
+        "context": "warning",
+        "context_label": "力になりたいと思い、遠慮がちに指摘します。(warning)",
+        "sentence": "アキラが同窓会の場所として提案したお店は、最近味が落ちています。大輔は力になりたいと思い、遠慮がちに指摘します。「そこ、最近<modifier>美味しくないから、他の店にしたら？」"
     },
     {
-        "id": "美味しい_ambiguous",
+        "id": "美味しい_cautious",
         "predicate": "美味しい",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a colleague asking his opinion on restaurant choices, Daisuke answers vaguely so they can decide: \"That place is <modifier> tasty, but if there's somewhere better, that works too.\""
+        "context": "cautious",
+        "context_label": "自分の意見を押し付けたくない+慎重に答えます。",
+        "sentence": "大輔は友人とどの店で食べるか話しています。自分の意見を押し付けたくない大輔は、慎重に答えます。「そこ、安くて量も多いけど、<modifier>美味しくないかもしれない。ここでいい？」"
     },
     {
-        "id": "美味しい_impressed",
+        "id": "美味しい_agree",
         "predicate": "美味しい",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "About the food he ate, Daisuke says, impressed: \"This is <modifier> delicious!\""
+        "context": "agree",
+        "context_label": "同調・認める・感謝する\nagree/acknowledge/thank",
+        "sentence": "大輔は、見た目が地味だからと敬遠していた店に入ります。友人に絶対美味しいと言われ、半信半疑でついてきたのですが、美味しい料理に感動します。「<modifier>美味しいね。誘ってくれてありがとう」"
     },
     {
         "id": "美味しい_direct",
         "predicate": "美味しい",
         "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how tasty the food was, Daisuke answers frankly: \"It was <modifier> tasty.\""
+        "context_label": "どれくらpredicateか聞かれ、率直に答えます",
+        "sentence": "ランチから戻った大輔は、その店を気にしていた同僚に、料理がどれくらい美味しかったか聞かれ、率直に答えます。「<modifier>美味しかったです。近くを通ったら入るくらいですかね」"
     },
     {
         "id": "美味しい_irritated",
         "predicate": "美味しい",
         "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About an expensive meal, Daisuke irritably says: \"This is not tasty <modifier>. Give me my money back.\""
+        "context_label": "（苛立って）キレ気味に答えます",
+        "sentence": "大輔はせっかく楽しみにしていた料理に、友人が大量に香辛料をかけて台無しにします。大輔はキレ気味に言います。「料理、<modifier>美味しくなくなっちゃったんだけど！」"
     },
     {
         "id": "美味しい_encourage",
         "predicate": "美味しい",
         "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a friend worried about the taste of their cooking, Daisuke reassures them a little: \"This is <modifier> tasty, but I think adding some salt would make it even better.\""
+        "context_label": "励まします",
+        "sentence": "友人が作った料理の味が少し薄いです。彼女はそれを申し訳ないと思っているようなので大輔が励まします。「<modifier>美味しいよ。味は少し薄いけど、塩足せるし。」"
     },
     {
-        "id": "便利_honest",
-        "predicate": "便利",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a colleague asking for his opinion on the app they're using, Daisuke honestly tells them for their sake: \"That's not <modifier> convenient, maybe you should switch.\""
-    },
-    {
-        "id": "便利_ambiguous",
-        "predicate": "便利",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend consulting him about a place to move to, Daisuke answers vaguely so they can decide: \"That area is <modifier> convenient too, but it also feels a bit pricey.\""
-    },
-    {
-        "id": "便利_impressed",
-        "predicate": "便利",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "About a product he used for the first time, Daisuke says, impressed: \"This product is <modifier> convenient!\""
-    },
-    {
-        "id": "便利_direct",
-        "predicate": "便利",
-        "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how convenient the product was, Daisuke answers frankly: \"It was <modifier> convenient.\""
-    },
-    {
-        "id": "便利_irritated",
-        "predicate": "便利",
-        "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About a product he had high expectations for, Daisuke irritably says: \"This product isn't convenient <modifier>.\""
-    },
-    {
-        "id": "便利_encourage",
-        "predicate": "便利",
-        "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a friend worried about the reaction to a gift they gave, Daisuke reassures them a little: \"This is <modifier> convenient, I think — we use it at home too.\""
-    },
-    {
-        "id": "綺麗_honest",
+        "id": "綺麗_warning",
         "predicate": "綺麗",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a friend consulting him about a location to open a shop, Daisuke honestly tells them for their sake: \"That place doesn't have <modifier> nice exterior, maybe you should open somewhere else.\""
+        "context": "warning",
+        "context_label": "力になりたいと思い、遠慮がちに指摘します。(warning)",
+        "sentence": "アキラが商品の撮影写真を選んで大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「その写真、<modifier>綺麗じゃないと思うな。取り直した方がいいんじゃない？」"
     },
     {
-        "id": "綺麗_ambiguous",
+        "id": "綺麗_cautious",
         "predicate": "綺麗",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a colleague asking his opinion on an accessory to buy, Daisuke answers vaguely so they can decide: \"That one's <modifier> pretty too, but this bracelet might be nice as well — I'll leave it up to you.\""
+        "context": "cautious",
+        "context_label": "自分の意見を押し付けたくない+慎重に答えます。",
+        "sentence": "友人はデートで行くスポットについて相談してきます。自分の意見を押し付けたくない大輔は、慎重に答えます。「そこの景色<modifier>綺麗じゃないかも。料理は美味しいけどね。」"
     },
     {
-        "id": "綺麗_impressed",
+        "id": "綺麗_agree",
         "predicate": "綺麗",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "While watching TV, Daisuke says, impressed: \"This announcer is <modifier> pretty!\""
+        "context": "agree",
+        "context_label": "同調・認める・感謝する\nagree/acknowledge/thank",
+        "sentence": "大輔は、古いからと敬遠していた庭園に行きます。友人に手入れが行き届いていると言われ、半信半疑でついてきたのですが、本当に整えられた景色を見て感心します。「<modifier>綺麗だね。連れてきてくれてありがとう。」"
     },
     {
         "id": "綺麗_direct",
         "predicate": "綺麗",
         "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how nice the place was, Daisuke answers frankly: \"It was <modifier> nice.\""
+        "context_label": "どれくらpredicateか聞かれ、率直に答えます",
+        "sentence": "旅行から帰った大輔は、次に行こうか迷っている友人に、その場所がどれくらい綺麗だったか聞かれ、率直に答えます。「<modifier>綺麗でした。写真、何枚も撮りました」"
     },
     {
         "id": "綺麗_irritated",
         "predicate": "綺麗",
         "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About a place he'd heard was beautiful, Daisuke irritably says: \"This isn't pretty <modifier>.\""
+        "context_label": "（苛立って）キレ気味に答えます",
+        "sentence": "大輔は、来客のために家具の配置まで整えた部屋に、友人が荷物を次々と置いていって台無しになりました。大輔はキレ気味に言います。「整えたばっかりなのに、<modifier>綺麗じゃなくなっちゃったんだけど！」"
     },
     {
         "id": "綺麗_encourage",
         "predicate": "綺麗",
         "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a junior colleague worried about how their drawing turned out, Daisuke reassures them: \"This is drawn <modifier> nicely, I think.\""
+        "context_label": "励まします",
+        "sentence": "大輔は後輩と一緒に作品に取り組んでいます。描いた絵の線が少し歪んでいることを申し訳ないと思っている後輩を大輔が励まします。「<modifier>綺麗に描けてるよ。線はあとで整えられるし、全然大丈夫だよ。」"
     },
     {
-        "id": "上手_honest",
-        "predicate": "上手",
-        "context": "honest",
-        "context_label": "正直に指摘します",
-        "sentence": "To a student practicing calligraphy, Daisuke honestly tells them for their sake: \"The first character isn't written <modifier> well, let's redo it.\""
+        "id": "遅い_warning",
+        "predicate": "遅い",
+        "context": "warning",
+        "context_label": "力になりたいと思い、遠慮がちに指摘します。(warning)",
+        "sentence": "社員旅行の移動手段を担当しているアキラが、バスで行く案を見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「その時間帯のバス、<modifier>遅いかも。電車にしたらどう？」"
     },
     {
-        "id": "上手_ambiguous",
-        "predicate": "上手",
-        "context": "ambiguous",
-        "context_label": "相手に判断してもらうため、曖昧に答えます",
-        "sentence": "To a friend asking if he wants to go to a live show, Daisuke answers vaguely so they can decide: \"That performer is <modifier> skilled, but not enough that I'd go see them alone — I'll leave it up to you.\""
+        "id": "遅い_cautious",
+        "predicate": "遅い",
+        "context": "cautious",
+        "context_label": "自分の意見を押し付けたくない+慎重に答えます。",
+        "sentence": "大輔は友人とどの交通手段で行くか相談しています。自分の意見を押し付けたくない大輔は、友人の提案に対して慎重に答えます。「バス、乗り換えなしで楽だけど、<modifier>遅いみたいだよ。」"
     },
     {
-        "id": "上手_impressed",
-        "predicate": "上手",
-        "context": "impressed",
-        "context_label": "感激した様子で言います",
-        "sentence": "Looking at an illustration his colleague drew, Daisuke says, impressed: \"This is <modifier> good!\""
+        "id": "遅い_agree",
+        "predicate": "遅い",
+        "context": "agree",
+        "context_label": "同調・認める・感謝する\nagree/acknowledge/thank",
+        "sentence": "大輔は、処理が遅いからと使うのを避けていたアプリを開きます。友人に最新版は速くなったと言われ、半信半疑で試したのですが、本当にすぐ動く画面を見て感心します。「<modifier>遅くないね。教えてくれてありがとう」"
     },
     {
-        "id": "上手_direct",
-        "predicate": "上手",
+        "id": "遅い_direct",
+        "predicate": "遅い",
         "context": "direct",
-        "context_label": "どれくらか聞かれ、率直に答えます",
-        "sentence": "Asked how skilled the performance was, Daisuke answers frankly: \"It was <modifier> skilled.\""
+        "context_label": "どれくらpredicateか聞かれ、率直に答えます",
+        "sentence": "進捗を確認しにきた上司に、大輔はその作業がどれくらい遅いか聞かれ、率直に答えます。「<modifier>遅いです。半日ほど押していますが、今週中には追いつけます」"
     },
     {
-        "id": "上手_irritated",
-        "predicate": "上手",
+        "id": "遅い_irritated",
+        "predicate": "遅い",
         "context": "irritated",
-        "context_label": "苛立ってキレ気味に答えます",
-        "sentence": "About a performance he'd heard was skillful, Daisuke irritably says: \"This isn't skilled <modifier>.\""
+        "context_label": "（苛立って）キレ気味に答えます",
+        "sentence": "大輔は、急ぎだと伝えていた作業を任せたのに急ぎもせず、数日遅れて提出されました。大輔はキレ気味に言います。「<modifier>遅いんだけど、何度も早く出してって言ったよね？」"
     },
     {
-        "id": "上手_encourage",
-        "predicate": "上手",
+        "id": "遅い_encourage",
+        "predicate": "遅い",
         "context": "encourage",
-        "context_label": "励まします（多少そうだと思いつつも否定して）",
-        "sentence": "To a junior colleague worried about how their playing turned out, Daisuke reassures them: \"I think you're <modifier> good — now it's just about playing with confidence.\""
+        "context_label": "励まします",
+        "sentence": "慣れない作業をしている友人は、仕事が遅いことを申し訳ないと思っているようなので大輔が励まします。「<modifier>遅くないよ。一緒にやってくれる人がいるだけでも気が楽になる。」"
+    },
+    {
+        "id": "寒い_warning",
+        "predicate": "寒い",
+        "context": "warning",
+        "context_label": "力になりたいと思い、遠慮がちに指摘します。(warning)",
+        "sentence": "会議室の空調を担当しているアキラが、設定を終えて席に戻ってきます。大輔は力になりたいと思い、遠慮がちに指摘します。「ここ、<modifier>寒いと思う。温度上げた方がいいんじゃない？」"
+    },
+    {
+        "id": "寒い_cautious",
+        "predicate": "寒い",
+        "context": "cautious",
+        "context_label": "自分の意見を押し付けたくない+慎重に答えます。",
+        "sentence": "友人に何をきて行けばいいか相談され自分の意見を押し付けたくない大輔は、慎重に答えます。「それは身軽で動きやすいけど、今日は<modifier>寒いみたいだよ。」"
+    },
+    {
+        "id": "寒い_agree",
+        "predicate": "寒い",
+        "context": "agree",
+        "context_label": "同調・認める・感謝する\nagree/acknowledge/thank",
+        "sentence": "大輔は、「絶対暖かいよ」と友人に勧められたコートを半信半疑で買い、スキー場に着てきました。リフトに乗っても風を感じない暖かさに感心して言います。「<modifier>寒くない！このコート買ってよかった。ありがとう」"
+    },
+    {
+        "id": "寒い_direct",
+        "predicate": "寒い",
+        "context": "direct",
+        "context_label": "どれくらpredicateか聞かれ、率直に答えます",
+        "sentence": "これから出かける友人に、大輔は外がどれくらい寒いか聞かれ、率直に答えます。「<modifier>寒いです。上着はあった方がいいかもしれないです。」"
+    },
+    {
+        "id": "寒い_irritated",
+        "predicate": "寒い",
+        "context": "irritated",
+        "context_label": "（苛立って）キレ気味に答えます",
+        "sentence": "同僚がエアコンを下げすぎていたせいで、オフィスが寒いです。大輔はキレ気味に言います。「<modifier>寒いんだけど、どうにかして」"
+    },
+    {
+        "id": "寒い_encourage",
+        "predicate": "寒い",
+        "context": "encourage",
+        "context_label": "励まします",
+        "sentence": "友人の提案で来たテラス席が少し寒いです。申し訳ないと思っている彼女を大輔が励まします。「<modifier>寒くないよ。お茶飲めばすぐ温まるよ。」"
+    },
+    {
+        "id": "汚い_warning",
+        "predicate": "汚い",
+        "context": "warning",
+        "context_label": "力になりたいと思い、遠慮がちに指摘します。(warning)",
+        "sentence": "アキラが共用の給湯室を使い終えて戻ってきます。大輔は力になりたいと思い、遠慮がちに指摘します。「シンクのところ、<modifier>汚いから、流しておいた方がいいよ」"
+    },
+    {
+        "id": "汚い_cautious",
+        "predicate": "汚い",
+        "context": "cautious",
+        "context_label": "自分の意見を押し付けたくない+慎重に答えます。",
+        "sentence": "大輔は友人とどの宿に泊まるか相談しています。友人の提案に対し、自分の意見を押し付けたくない大輔は、慎重に答えます。「そこ、駅から近くて安いけど、<modifier>汚いかも。」"
+    },
+    {
+        "id": "汚い_agree",
+        "predicate": "汚い",
+        "context": "agree",
+        "context_label": "同調・認める・感謝する\nagree/acknowledge/thank",
+        "sentence": "大輔は、古いからと敬遠していた店に入ります。友人にちゃんと手入れされていると言われ、半信半疑でついてきたのですが、本当に清潔な店内を見て感心します。「確かに<modifier>汚くないね。ついてきてよかった。」"
+    },
+    {
+        "id": "汚い_direct",
+        "predicate": "汚い",
+        "context": "direct",
+        "context_label": "どれくらpredicateか聞かれ、率直に答えます",
+        "sentence": "内見を頼んでいた友人に、大輔はその部屋がどれくらい汚いか聞かれ、率直に答えます。「<modifier>汚いです。軽く拭けば気にならない程度でした」"
+    },
+    {
+        "id": "汚い_irritated",
+        "predicate": "汚い",
+        "context": "irritated",
+        "context_label": "（苛立って）キレ気味に答えます",
+        "sentence": "大輔は、共用スペースの掃除を任せたのに何週間も放置されお客さんが来た際にも片付いていませんでした。お客さんが不快な顔をしているのをみて、彼らが帰ってからキレ気味に言います。「この部屋<modifier>汚いんだけど、いつになったら綺麗にしてくれるの？」"
+    },
+    {
+        "id": "汚い_encourage",
+        "predicate": "汚い",
+        "context": "encourage",
+        "context_label": "励まします",
+        "sentence": "友人が先立って選んだ席が少し汚れていることに気づきます。申し訳ないと思っている彼女を大輔が励まします。「<modifier>汚くないよ。ちょっと拭けば大丈夫だよ。」"
     }
 ];
