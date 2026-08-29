@@ -55,7 +55,9 @@
             '<p class="stimulus">' + sentence_with_blank + '</p>' +
             '<p>上の＿＿＿に入る言葉を入力し、Enterキーを押してください。いくつでも追加できます。</p>' +
             '<div id="tag-container" class="tag-container"></div>' +
-            '<input type="text" id="tag-input" class="tag-input" placeholder="言葉を入力してEnter" autocomplete="off">';
+            '<input type="text" id="tag-input" class="tag-input" placeholder="言葉を入力してEnter" autocomplete="off">' +
+            '<p class="feedback-label">（任意）このシナリオについてのフィードバックがあればご記入ください。</p>' +
+            '<textarea id="feedback-box" class="feedback-box" rows="3" placeholder="コメント（任意）"></textarea>';
 
         return {
             type: jsPsychHtmlButtonResponse,
@@ -117,6 +119,8 @@
             on_finish: function (data) {
                 data.modifier_response = collected_tags.join('; ');
                 data.modifier_response_list = collected_tags.slice();
+                var feedback_box = document.getElementById('feedback-box');
+                data.trial_feedback = feedback_box ? feedback_box.value.trim() : '';
             }
         };
     });
