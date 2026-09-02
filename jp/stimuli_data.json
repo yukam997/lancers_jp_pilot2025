@@ -1,0 +1,464 @@
+[
+  {
+    "id": "混んでいる_honest",
+    "predicate": "混んでいる",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、友人が向かおうとしている店の状況を知り、相手のためを思い、正直に指摘します。「そこ、<modifier>混んでいるから、時間をずらした方がいいと思うよ」"
+  },
+  {
+    "id": "混んでいる_ambiguous",
+    "predicate": "混んでいる",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、お店を提案してきた友人に、相手に判断してもらうため、曖昧に答えます。「そこ、<modifier>混んでるみたいだけど、ここでいい？」"
+  },
+  {
+    "id": "混んでいる_impressed",
+    "predicate": "混んでいる",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、混雑を心配していたお店に入り、感激した様子で言います。「<modifier>混んでないね、信じてよかった」"
+  },
+  {
+    "id": "混んでいる_direct",
+    "predicate": "混んでいる",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、お店がどれくらい混んでいたか聞かれ、率直に答えます。「<modifier>混んでいます」"
+  },
+  {
+    "id": "混んでいる_irritated",
+    "predicate": "混んでいる",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、静かな店に行きたかったのに、美味しくもなくやたら混んでいる店に連れて来られたことに苛立ち、その店を選んだ友人にキレ気味に言います。「<modifier>混んでるし、味も微妙じゃん。次はちゃんと調べてから連れてきてよ」"
+  },
+  {
+    "id": "混んでいる_encourage",
+    "predicate": "混んでいる",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、混雑を心配している友人に、多少そうだと思いつつも、否定して、少し励まします。「<modifier>混んでないよ。座れないほどじゃないし、全然大丈夫」"
+  },
+  {
+    "id": "高い_honest",
+    "predicate": "高い",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、新商品の価格設定について相談してきた同僚に、相手のためを思い、正直に指摘します。「その値段設定は<modifier>高いかもしれないよ」"
+  },
+  {
+    "id": "高い_ambiguous",
+    "predicate": "高い",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、レストランの予算について相談してきた友人に、相手に判断してもらうため、曖昧に答えます。「そこは<modifier>高いけど、たまには贅沢してもいいよ」"
+  },
+  {
+    "id": "高い_impressed",
+    "predicate": "高い",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、料理の値段について、感激した様子で言います。「この料理、こんなに美味しいのに<modifier>高くないんですね！コスパ最高です」"
+  },
+  {
+    "id": "高い_direct",
+    "predicate": "高い",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、そのお店がどれくらい高かったか聞かれ、率直に答えます。「<modifier>高いです」"
+  },
+  {
+    "id": "高い_irritated",
+    "predicate": "高い",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、期待外れだったサービスについて、店員に苛立ってキレ気味に答えます。「<modifier>高いお金払ったんですけど、このサービスはそれに値しません。返金してもらえますか」"
+  },
+  {
+    "id": "高い_encourage",
+    "predicate": "高い",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、値段を気にしている友人に、多少そうだと思いつつも、否定して、少し励まします。「<modifier>高くないよ。この内容ならむしろ安いくらいだと思う」"
+  },
+  {
+    "id": "遅い_honest",
+    "predicate": "遅い",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、初めてマラソンに参加した後輩の記録について、相手のためを思い、正直に指摘します。「相対的に見たら<modifier>遅いけど、初参加にしては上出来だよ」"
+  },
+  {
+    "id": "遅い_ambiguous",
+    "predicate": "遅い",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、移動手段について相談してきた同僚に、相手に判断してもらうため、曖昧に答えます。「バスの方が<modifier>遅いけど、どっちでもいいよ」"
+  },
+  {
+    "id": "遅い_impressed",
+    "predicate": "遅い",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、後輩の作業の速さに驚き、感激した様子で言います。「<modifier>遅くないね。私が間違っていました。あっぱれ」"
+  },
+  {
+    "id": "遅い_direct",
+    "predicate": "遅い",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、作業がどれくらい遅いか聞かれ、率直に答えます。「<modifier>遅いです」"
+  },
+  {
+    "id": "遅い_irritated",
+    "predicate": "遅い",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、集合時間に大幅に遅れてきた同僚に、苛立ってキレ気味に答えます。「<modifier>遅いんですけど、何時集合だと思っているんですか？次からは時間通りに来てよ」"
+  },
+  {
+    "id": "遅い_encourage",
+    "predicate": "遅い",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、作業の遅さを気にしている後輩に、多少そうだと思いつつも、否定して、少し励まします。「作業、<modifier>遅くないよ。まだ慣れてないだけだから、そのうち早くなるよ」"
+  },
+  {
+    "id": "寒い_honest",
+    "predicate": "寒い",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、会議室の温度を管理している同僚に、相手のためを思い、正直に指摘します。「ここ、<modifier>寒いから、温度を上げた方がいいと思う」"
+  },
+  {
+    "id": "寒い_ambiguous",
+    "predicate": "寒い",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、外出先の気温について相談してきた友人に、相手に判断してもらうため、曖昧に答えます。「<modifier>寒いけど、上着を着ればいいから」"
+  },
+  {
+    "id": "寒い_impressed",
+    "predicate": "寒い",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、購入したダウンジャケットの暖かさに、感激した様子で言います。「このダウンジャケット、こんなに薄いのに<modifier>寒くないんですね！さすが機能性重視のブランドです」"
+  },
+  {
+    "id": "寒い_direct",
+    "predicate": "寒い",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、外がどれくらい寒いか聞かれ、率直に答えます。「<modifier>寒いです」"
+  },
+  {
+    "id": "寒い_irritated",
+    "predicate": "寒い",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、暖房の設定を管理している同僚に、苛立ってキレ気味に答えます。「<modifier>寒いんだけど、どうにかしてくれない？」"
+  },
+  {
+    "id": "寒い_encourage",
+    "predicate": "寒い",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、寒さを気にしている同僚に、多少そうだと思いつつも、否定して、少し励まします。「<modifier>寒くないよ。動いてればすぐ気にならなくなると思う」"
+  },
+  {
+    "id": "汚い_honest",
+    "predicate": "汚い",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、来客準備をしている同僚に、相手のためを思い、正直に指摘します。「ここ、<modifier>汚いから、お客さんが来る前に片付けよう」"
+  },
+  {
+    "id": "汚い_ambiguous",
+    "predicate": "汚い",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、宿泊先の部屋の様子について相談してきた友人に、相手に判断してもらうため、曖昧に答えます。「<modifier>汚いけど、許容範囲だと思うよ」"
+  },
+  {
+    "id": "汚い_impressed",
+    "predicate": "汚い",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、内見した部屋の状態に、感激した様子で言います。「築30年と聞いて不安でしたが、手入れが行き届いていて<modifier>汚くないですね！大切に使われてきたのが分かります」"
+  },
+  {
+    "id": "汚い_direct",
+    "predicate": "汚い",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、部屋がどれくらい汚いか聞かれ、率直に答えます。「<modifier>汚いです」"
+  },
+  {
+    "id": "汚い_irritated",
+    "predicate": "汚い",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、掃除されていない共有スペースについて、担当の同僚に苛立ってキレ気味に答えます。「<modifier>汚いんだけど、誰か掃除してくれない？」"
+  },
+  {
+    "id": "汚い_encourage",
+    "predicate": "汚い",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、部屋の汚れを気にしている友人に、多少そうだと思いつつも、否定して、少し励まします。「<modifier>汚くないよ。ちょっと片付ければ全然問題ないレベルだと思う」"
+  },
+  {
+    "id": "不便_honest",
+    "predicate": "不便",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、待ち合わせ場所を提案してきた友人に、相手のためを思い、正直に指摘します。「そこ、<modifier>不便で行きにくいから、他のお店の方がいいかも」"
+  },
+  {
+    "id": "不便_ambiguous",
+    "predicate": "不便",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、お店について意見を聞いてきた友人に、相手に判断してもらうため、曖昧に答えます。「<modifier>不便だけど、美香が良ければここでいいよ」"
+  },
+  {
+    "id": "不便_impressed",
+    "predicate": "不便",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、内見した物件の周辺環境に、感激した様子で言います。「駅から少し歩くと聞いて心配していましたが、周りにお店も多くて<modifier>不便じゃないですね！」"
+  },
+  {
+    "id": "不便_direct",
+    "predicate": "不便",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、その場所がどれくらい不便か聞かれ、率直に答えます。「<modifier>不便です」"
+  },
+  {
+    "id": "不便_irritated",
+    "predicate": "不便",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、新しく導入されたシステムの使いにくさについて、システム担当の同僚に苛立ってキレ気味に答えます。「<modifier>不便なんだけど、前のやり方に戻してくれない？」"
+  },
+  {
+    "id": "不便_encourage",
+    "predicate": "不便",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、場所の不便さを気にしている同僚に、多少そうだと思いつつも、否定して、少し励まします。「<modifier>不便じゃないよ。慣れれば全然気にならなくなると思う」"
+  },
+  {
+    "id": "面白い_honest",
+    "predicate": "面白い",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、ネタ見せをした後輩に、相手のためを思い、正直に答えます。「その漫才、<modifier>面白くないから、他の芸にした方がいいかも」"
+  },
+  {
+    "id": "面白い_ambiguous",
+    "predicate": "面白い",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、漫才を一緒に見に行くか聞いてきた友人に、相手に判断してもらうため、曖昧に答えます。「漫才は<modifier>面白いと思うけど、わざわざ見に行くほど好きではないかな」"
+  },
+  {
+    "id": "面白い_impressed",
+    "predicate": "面白い",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、見た映画について感激した様子で言います。「<modifier>面白かった！」"
+  },
+  {
+    "id": "面白い_direct",
+    "predicate": "面白い",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、見た映画がどれくらい面白かったか聞かれ、率直に答えます。「<modifier>面白かったです」"
+  },
+  {
+    "id": "面白い_irritated",
+    "predicate": "面白い",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、期待していたイベントについて、苛立ってキレ気味に答えます。「<modifier>面白くない」"
+  },
+  {
+    "id": "面白い_encourage",
+    "predicate": "面白い",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、上映中に寝てしまったことを気にしている友人を励まします。「映画、<modifier>面白かったけど、正直、最後まで起きてられなかったよ」"
+  },
+  {
+    "id": "美味しい_honest",
+    "predicate": "美味しい",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、自分の作った料理の感想を聞いてきた友人に、相手のためを思い、正直に答えます。「正直、<modifier>おいしくないかも」"
+  },
+  {
+    "id": "美味しい_ambiguous",
+    "predicate": "美味しい",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、お店選びについて意見を求めてきた同僚に、相手に判断してもらうため、曖昧に答えます。「そこは<modifier>美味しいけど、他にいい店があるならそっちでいいよ」"
+  },
+  {
+    "id": "美味しい_impressed",
+    "predicate": "美味しい",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、食べた料理について感激した様子で言います。「これ、<modifier>美味しい！」"
+  },
+  {
+    "id": "美味しい_direct",
+    "predicate": "美味しい",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、食べた料理がどれくらい美味しかったか聞かれ、率直に答えます。「<modifier>美味しかったです」"
+  },
+  {
+    "id": "美味しい_irritated",
+    "predicate": "美味しい",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、高いお金を払った料理について、苛立ってキレ気味に答えます。「<modifier>おいしくない。お金返してよ」"
+  },
+  {
+    "id": "美味しい_encourage",
+    "predicate": "美味しい",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、料理の味を気にしている友人を励まします。「これ、<modifier>美味しいけど、塩を足したらもっと美味しくなると思うよ」"
+  },
+  {
+    "id": "便利_honest",
+    "predicate": "便利",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、使っているアプリについて意見を求めてきた同僚に、相手のためを思い、正直に答えます。「それ、<modifier>便利じゃないから、変えた方がいいんじゃない？」"
+  },
+  {
+    "id": "便利_ambiguous",
+    "predicate": "便利",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、引っ越し先の土地について相談してきた友人に、相手に判断してもらうため、曖昧に答えます。「その土地も<modifier>便利だけど、高い気もするな」"
+  },
+  {
+    "id": "便利_impressed",
+    "predicate": "便利",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、初めて使った商品について感激した様子で言います。「この商品、<modifier>便利ですね」"
+  },
+  {
+    "id": "便利_direct",
+    "predicate": "便利",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、使った商品がどれくらい便利だったか聞かれ、率直に答えます。「<modifier>便利でした」"
+  },
+  {
+    "id": "便利_irritated",
+    "predicate": "便利",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、期待して買った商品について、苛立ってキレ気味に答えます。「この商品、<modifier>便利じゃないんですけど」"
+  },
+  {
+    "id": "便利_encourage",
+    "predicate": "便利",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、贈ったプレゼントの反応を気にしている友人を励まします。「これ、<modifier>便利だと思うよ。うちでも使ってるし」"
+  },
+  {
+    "id": "綺麗_honest",
+    "predicate": "綺麗",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、お店を開く場所について相談してきた友人に、相手のためを思い、正直に答えます。「そこ、<modifier>綺麗な外観じゃないし、違う場所で開いた方がいいと思うよ」"
+  },
+  {
+    "id": "綺麗_ambiguous",
+    "predicate": "綺麗",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、買うアクセサリーについて意見を求めてきた同僚に、相手に判断してもらうため、曖昧に答えます。「それも<modifier>綺麗だけど、このブレスレットもいいんじゃないかな。任せるよ」"
+  },
+  {
+    "id": "綺麗_impressed",
+    "predicate": "綺麗",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、テレビを見ながら感激した様子で言います。「このアナウンサー、<modifier>綺麗な人！」"
+  },
+  {
+    "id": "綺麗_direct",
+    "predicate": "綺麗",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、行った場所がどれくらい綺麗だったか聞かれ、率直に答えます。「<modifier>綺麗でした」"
+  },
+  {
+    "id": "綺麗_irritated",
+    "predicate": "綺麗",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、綺麗だと聞いて訪れた場所について、苛立ってキレ気味に答えます。「<modifier>綺麗じゃないんだけど」"
+  },
+  {
+    "id": "綺麗_encourage",
+    "predicate": "綺麗",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、自分の描いた絵の出来を気にしている後輩を励まします。「これ、<modifier>綺麗に描けてるよ」"
+  },
+  {
+    "id": "上手_honest",
+    "predicate": "上手",
+    "context": "honest",
+    "context_label": "正直に指摘します",
+    "sentence": "大輔は、習字の練習をしている生徒に、相手のためを思い、正直に答えます。「最初の文字が<modifier>上手に描けていないから、書き直そうか」"
+  },
+  {
+    "id": "上手_ambiguous",
+    "predicate": "上手",
+    "context": "ambiguous",
+    "context_label": "相手に判断してもらうため、曖昧に答えます",
+    "sentence": "大輔は、ライブに一緒に行くか聞いてきた友人に、相手に判断してもらうため、曖昧に答えます。「その人は<modifier>上手いけど、一人で観に行くほどではないかな。任せるよ」"
+  },
+  {
+    "id": "上手_impressed",
+    "predicate": "上手",
+    "context": "impressed",
+    "context_label": "感激した様子で言います",
+    "sentence": "大輔は、同僚の描いたイラストを見て感激した様子で言います。「これ、<modifier>上手！」"
+  },
+  {
+    "id": "上手_direct",
+    "predicate": "上手",
+    "context": "direct",
+    "context_label": "どれくらか聞かれ、率直に答えます",
+    "sentence": "大輔は、見たパフォーマンスがどれくらい上手だったか聞かれ、率直に答えます。「<modifier>上手でした」"
+  },
+  {
+    "id": "上手_irritated",
+    "predicate": "上手",
+    "context": "irritated",
+    "context_label": "苛立ってキレ気味に答えます",
+    "sentence": "大輔は、上手だと聞いて期待していたパフォーマンスについて、苛立ってキレ気味に答えます。「<modifier>上手じゃないんだけど」"
+  },
+  {
+    "id": "上手_encourage",
+    "predicate": "上手",
+    "context": "encourage",
+    "context_label": "励まします（多少そうだと思いつつも否定して）",
+    "sentence": "大輔は、自分の演奏の出来を気にしている後輩を励まします。「<modifier>上手だと思うよ。あとは自信を持って弾くだけだと思う」"
+  }
+]
