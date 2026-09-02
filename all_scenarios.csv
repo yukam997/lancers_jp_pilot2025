@@ -1,0 +1,289 @@
+predicate,attitude,relationship,language,text
+面白い,warning,friend,JP,友人が動画投稿用に撮った漫才を大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「中盤が[modifier]面白くない気がするから、そこ短くしたらどう？」
+面白い,non-committal,friend,JP,大輔は友人とどのコメディ映画を見るか話しています。自分の意見を押し付けたくない大輔は、慎重に答えます。「それ、[modifier]面白くないみたいだけど、映像は綺麗らしいよ」
+面白い,acknowledge,friend,JP,友人が絶対面白いと言い、大輔をマイナーなコメディ映画に誘います。半信半疑でついてきたのですが、笑い続けてしまい、言います。「映画、[modifier]面白かった。誘ってくれてありがとう」
+面白い,neutral,friend,JP,上映後、大輔はまだその映画を見ていない友人に、どれくらい面白かったか聞かれ、率直に答えます。「映画、[modifier]面白かったよ。後半は少し眠くなったけど」
+面白い,annoyed,friend,JP,友人が大輔の失敗談を何度もネタにして笑いを取ろうとします。やめてと頼んでも続けるので、苛立った大輔は言います。「その話、[modifier]面白くないんだけど。もうやめてよ」
+面白い,encouraging,friend,JP,友人の提案で観にきた漫才が少し退屈でした。提案したことを申し訳ないと思っている友人を、大輔が励まします。「漫才、[modifier]面白かったよ。みんなで一緒に行く機会ができただけでも嬉しいし」
+面白い,warning,friend,EN,"A friend shows Daisuke the comedy routine he filmed to post online. Wanting to be helpful, Daisuke points out hesitantly: ""The middle part doesn't feel [modifier] funny to me, so what if you cut it down?"""
+面白い,non-committal,friend,EN,"Daisuke and a friend are discussing which comedy to watch. Not wanting to assert his opinion, Daisuke cautiously replies: ""It seems like it isn't [modifier] funny, but the visuals are supposed to be beautiful."""
+面白い,acknowledge,friend,EN,"A friend insists it will be great and drags Daisuke to an obscure comedy film. He came along half-convinced, but he couldn't stop laughing, and says: ""That was [modifier]funny. Thanks for inviting me."""
+面白い,neutral,friend,EN,"After the screening, Daisuke is asked by a friend who hasn't seen the film yet how funny it was, and he answers frankly: ""It was fairly funny. I did get [modifier] sleepy in the second half, though."""
+面白い,annoyed,friend,EN,"A friend keeps mining Daisuke's screw-up for laughs. Daisuke has asked him to stop and he hasn't, so, irritated, he says: ""That story is [modifier] funny. Drop it already."""
+面白い,encouraging,friend,EN,"The manzai act a friend suggested turns out to be a little dull. Since the friend feels bad for suggesting it, Daisuke reassures him: ""It was [modifier] funny. And just getting the chance for us all to go together made me happy."""
+面白い,warning,colleague,JP,社内イベントの余興を担当する同僚が、考えたネタを大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「中盤が[modifier]面白くない気がするので、そこにゲームを入れたらどうですか？」
+面白い,non-committal,colleague,JP,歓迎会の余興について同僚に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「その企画、[modifier]面白くないかもしれないですけど、準備は楽ですね」
+面白い,acknowledge,colleague,JP,同僚が絶対面白いと勧めてきたコメディ映画を、大輔は半信半疑で見ました。最後まで笑い続けてしまい、翌日その同僚に言います。「映画、[modifier]面白かったです。教えてくれてありがとうございます」
+面白い,neutral,colleague,JP,社内イベントの翌日、大輔は出席していなかった同僚に、余興がどれくらい面白かったか聞かれ、率直に答えます。「余興、[modifier]面白かったです。後半は少し長く感じましたけど」
+面白い,annoyed,colleague,JP,飲み会で、同僚が大輔のミスを何度も蒸し返して笑いを取っています。周りが気を遣って笑っているのも分かり、苛立った大輔は言います。「その話、[modifier]面白くないんですけど。そのくらいにしてもらえますか」
+面白い,encouraging,colleague,JP,同僚が担当した余興が、思ったほど盛り上がりませんでした。申し訳なさそうにしている同僚を、大輔が励まします。「余興、[modifier]面白かったですよ。あの場を持たせただけでも十分だと思います」
+面白い,warning,colleague,EN,"The colleague in charge of the entertainment for the company event shows Daisuke the bit he came up with. Wanting to be helpful, Daisuke points out hesitantly: ""The middle stretch doesn't feel [modifier] funny to me, so what if you added a game there?"""
+面白い,non-committal,colleague,EN,"Asked for his opinion on the entertainment for the welcome party, Daisuke, not wanting to assert his view, cautiously replies: ""That plan might not be [modifier] funny, but it's easy to prepare."""
+面白い,acknowledge,colleague,EN,"Daisuke watched, half-convinced, a comedy film a colleague swore was great. He laughed all the way through, and the next day tells the colleague: ""That was [modifier]funny. Thank you for the recommendation."""
+面白い,neutral,colleague,EN,"The day after the company event, Daisuke is asked by a colleague who didn't attend how funny the entertainment was, and he answers frankly: ""It was fairly funny. The second half did feel [modifier] long, though."""
+面白い,annoyed,colleague,EN,"At a work drinking party, a colleague keeps dredging up Daisuke's mistake for laughs. Daisuke can tell the others are laughing out of politeness, and, irritated, he says: ""That story is [modifier] funny. Could you leave it there?"""
+面白い,encouraging,colleague,EN,"The entertainment segment a colleague was in charge of didn't land as well as hoped. Seeing him looking apologetic, Daisuke reassures him: ""It was [modifier] funny. Just carrying the room like that was enough, I think."""
+面白い,warning,boss,JP,上司が朝礼で話す予定の小話を大輔に聞かせてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「そのつかみ、私には[modifier]面白く感じられないかもしれません。短くされてはいかがでしょうか」
+面白い,non-committal,boss,JP,忘年会の出し物について上司に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「その案、[modifier]面白くないかもしれませんが、準備は楽です」
+面白い,acknowledge,boss,JP,上司に強く勧められたコメディ映画を、大輔は半信半疑で見ました。最後まで笑い続けてしまい、翌日上司に言います。「映画、[modifier]面白かったです。勧めていただいてありがとうございます」
+面白い,neutral,boss,JP,上司に、社内イベントの余興がどれくらい面白かったか聞かれ、大輔は率直に答えます。「余興、[modifier]面白かったです。後半は少し長く感じました」
+面白い,annoyed,boss,JP,上司が会議のたびに大輔の過去のミスをネタにして場を和ませようとします。何度目かで大輔は限界を感じ、二人になったときに苛立ちながら伝えます。「あの話、私は正直[modifier]面白く感じられないので、そろそろ勘弁していただきたいです」
+面白い,encouraging,boss,JP,上司が朝礼で話した小話が、あまり受けませんでした。気にしている様子の上司を、大輔が励まします。「あの話、[modifier]面白かったですよ。朝から空気が軽くなりました」
+面白い,warning,boss,EN,"The boss runs by Daisuke the anecdote he plans to tell at the morning meeting. Wanting to be helpful, Daisuke points out hesitantly: ""I'm not sure that opener comes across as [modifier] funny to me. Might it be worth shortening?"""
+面白い,non-committal,boss,EN,"Asked by his boss for his opinion on the year-end party entertainment, Daisuke, not wanting to assert his view, cautiously replies: ""That idea might not be [modifier] funny, but it's easy to prepare."""
+面白い,acknowledge,boss,EN,"Daisuke watched, half-convinced, a comedy film his boss strongly recommended. He laughed all the way through, and the next day tells his boss: ""That was [modifier]funny. Thank you for recommending it."""
+面白い,neutral,boss,EN,"Asked by his boss how funny the entertainment at the company event was, Daisuke answers frankly: ""It was fairly funny. The second half did feel [modifier] long."""
+面白い,annoyed,boss,EN,"The boss opens every meeting by using Daisuke's old mistake to lighten the mood. After the umpteenth time Daisuke has had enough, and once they are alone he says, irritated: ""Honestly, I don't [modifier] find that story funny, so I'd like you to let it go now."""
+面白い,encouraging,boss,EN,"The anecdote the boss told at the morning meeting didn't get much of a reaction. Seeing that he is bothered by it, Daisuke reassures him: ""It was [modifier] funny. It lightened the mood first thing in the morning."""
+面白い,warning,stranger,JP,路上で漫才をしていた芸人が、通りかかった大輔に感想を求めてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「中盤が[modifier]面白くない気がします。そこを短くされてはいかがでしょうか」
+面白い,non-committal,stranger,JP,相席になった客に、次にどの公演を見るか聞かれます。自分の意見を押し付けたくない大輔は、慎重に答えます。「そちらは、[modifier]面白くないみたいですけど、映像は綺麗らしいですよ」
+面白い,acknowledge,stranger,JP,レンタル店の店員に絶対面白いと勧められた映画を、大輔は半信半疑で借りました。最後まで笑い続けてしまい、返却時に店員に言います。「映画、[modifier]面白かったです。勧めていただいてありがとうございます」
+面白い,neutral,stranger,JP,上映後のロビーで、これから同じ映画を見る客に、どれくらい面白かったか聞かれ、大輔は率直に答えます。「映画、[modifier]面白かったです。後半は少し眠くなりましたけど」
+面白い,annoyed,stranger,JP,居酒屋で、隣の席の客が大輔たちの会話に割り込み、大輔の話し方を茶化して笑っています。何度も続くので、苛立った大輔は言います。「それ、[modifier]面白くないんですけど。放っておいてもらえますか」
+面白い,encouraging,stranger,JP,路上ライブをしていた芸人が、客が集まらなかったことを気にして謝ってきます。大輔はその芸人を励まします。「ネタ、[modifier]面白かったですよ。最後まで見ていた人もいましたし」
+面白い,warning,stranger,EN,"A street comedian who has just performed asks Daisuke, a passerby, for his impressions. Wanting to be helpful, Daisuke points out hesitantly: ""The middle part doesn't feel [modifier] funny to me. Might it be worth shortening?"""
+面白い,non-committal,stranger,EN,"A customer sharing his table asks Daisuke which show to see next. Not wanting to assert his opinion, Daisuke cautiously replies: ""That one seems like it isn't [modifier] funny, but it's supposed to look beautiful."""
+面白い,acknowledge,stranger,EN,"Daisuke rented, half-convinced, a film a shop clerk swore was great. He laughed all the way through, and when returning it tells the clerk: ""That was [modifier]funny. Thank you for recommending it."""
+面白い,neutral,stranger,EN,"In the lobby after the screening, Daisuke is asked by someone about to see the same film how funny it was, and he answers frankly: ""It was fairly funny. I did get [modifier] sleepy in the second half, though."""
+面白い,annoyed,stranger,EN,"At an izakaya, the customer at the next table butts into Daisuke's conversation and gets laughs by mocking the way he talks. It keeps happening, and, irritated, Daisuke says: ""That is [modifier] funny. Could you leave us alone?"""
+面白い,encouraging,stranger,EN,"A street performer, bothered that hardly anyone gathered, apologizes to Daisuke. Daisuke reassures him: ""It was [modifier] funny. Some people did stay to the end."""
+美味しい,warning,friend,JP,友人が同窓会の会場に選んだ店は、最近味が落ちています。大輔は力になりたいと思い、遠慮がちに指摘します。「そこ、最近[modifier]美味しくないみたいだから、他の店にしたらどう？」
+美味しい,non-committal,friend,JP,大輔は友人とどの店で食べるか相談しています。自分の意見を押し付けたくない大輔は、慎重に答えます。「そこ、[modifier]美味しくないかもしれないけど、安くて量も多いよ」
+美味しい,acknowledge,friend,JP,見た目が地味だからと大輔が敬遠していた店に、友人が絶対美味しいと言って連れて行きます。半信半疑だったのですが、料理に感動して言います。「この料理、[modifier]美味しいね。連れてきてくれてありがとう」
+美味しい,neutral,friend,JP,ランチから戻った大輔は、その店を気にしていた友人に、料理がどれくらい美味しかったか聞かれ、率直に答えます。「料理、[modifier]美味しかったよ。近くを通ったら入るくらいかな」
+美味しい,annoyed,friend,JP,大輔がせっかく楽しみにしていた料理に、友人が大量に香辛料をかけて台無しにします。苛立った大輔は言います。「料理、[modifier]美味しくなくなっちゃったんだけど！」
+美味しい,encouraging,friend,JP,友人が作ってくれた料理の味が少し薄いです。それを申し訳ないと言ってきた友人を、大輔が励まします。「これ、[modifier]美味しいよ。塩を足せばもっと良くなるし」
+美味しい,warning,friend,EN,"The restaurant a friend picked for the reunion has gone downhill lately. Wanting to be helpful, Daisuke points out hesitantly: ""I hear the food there isn't [modifier] tasty these days, so what if we went somewhere else?"""
+美味しい,non-committal,friend,EN,"Daisuke and a friend are deciding where to eat. Not wanting to assert his opinion, Daisuke cautiously replies: ""That place might not be [modifier] tasty, but it's cheap and the portions are big."""
+美味しい,acknowledge,friend,EN,"A friend takes Daisuke to a restaurant he had been avoiding because it looked unremarkable, insisting the food is great. He was half-convinced, but the food moves him: ""This is [modifier]tasty. Thanks for bringing me here."""
+美味しい,neutral,friend,EN,"Back from lunch, Daisuke is asked by a friend who had been curious about the place how tasty the food was, and he answers frankly: ""It was [modifier] tasty. The kind of place I'd stop into if I happened to be nearby."""
+美味しい,annoyed,friend,EN,"A friend dumps a huge amount of spice onto the dish Daisuke had been looking forward to, ruining it. Irritated, Daisuke says: ""The food is [modifier] tasty anymore!"""
+美味しい,encouraging,friend,EN,"The dish a friend cooked turns out a little bland. Since she apologizes for it, Daisuke reassures her: ""It's [modifier] tasty. A bit of salt would make it even better."""
+美味しい,warning,colleague,JP,接待の店を予約しようとしている同僚に、大輔は力になりたいと思い、遠慮がちに指摘します。「そこ、最近[modifier]美味しくないと聞くので、他の店にされてはどうですか？」
+美味しい,non-committal,colleague,JP,昼食の場所について同僚に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「そこ、[modifier]美味しくないかもしれないですけど、安くて早いですね」
+美味しい,acknowledge,colleague,JP,同僚が絶対美味しいと勧めてきた社食の新メニューを、大輔は半信半疑で頼みました。一口食べて感動して言います。「これ、[modifier]美味しいですね。教えてくれてありがとうございます」
+美味しい,neutral,colleague,JP,出張から戻った大輔は、同じ店に行こうとしている同僚に、料理がどれくらい美味しかったか聞かれ、率直に答えます。「料理、[modifier]美味しかったです。値段の割には十分でした」
+美味しい,annoyed,colleague,JP,大輔が机に置いていた弁当に、同僚が面白半分で大量のソースをかけました。昼食を楽しみにしていた大輔は、苛立って言います。「これ、[modifier]美味しくなくなっちゃったんですけど。次からやめてもらえますか」
+美味しい,encouraging,colleague,JP,同僚が持ってきた差し入れのお菓子が、少し焼きすぎでした。それを申し訳ないと言ってきた同僚を、大輔が励まします。「これ、[modifier]美味しいですよ。香ばしくて私はこのくらいが好きです」
+美味しい,warning,colleague,EN,"A colleague is about to book a restaurant for a client dinner. Wanting to be helpful, Daisuke points out hesitantly: ""I hear the food there isn't [modifier] tasty these days, so what if you picked somewhere else?"""
+美味しい,non-committal,colleague,EN,"Asked by a colleague for his view on where to have lunch, Daisuke, not wanting to assert his opinion, cautiously replies: ""That place might not be [modifier] tasty, but it's cheap and quick."""
+美味しい,acknowledge,colleague,EN,"Daisuke orders, half-convinced, the new cafeteria dish a colleague swore was great. One bite in he says, moved: ""This is [modifier]tasty. Thanks for telling me."""
+美味しい,neutral,colleague,EN,"Back from a business trip, Daisuke is asked by a colleague planning to go to the same restaurant how tasty the food was, and he answers frankly: ""It was [modifier] tasty. Good enough for the price."""
+美味しい,annoyed,colleague,EN,"A colleague, half joking, poured a load of sauce onto the lunch Daisuke had left on his desk. Daisuke, who had been looking forward to it, says, irritated: ""This is [modifier] tasty anymore. Could you not do that again?"""
+美味しい,encouraging,colleague,EN,"The sweets a colleague brought in are slightly overbaked. Since she apologizes for it, Daisuke reassures her: ""They're [modifier] tasty. Nice and toasty — I like them like this."""
+美味しい,warning,boss,JP,上司が接待に使う店を決めようとしています。大輔は力になりたいと思い、遠慮がちに指摘します。「そちら、最近[modifier]美味しくないと聞きまして、別の店も候補にされてはいかがでしょうか」
+美味しい,non-committal,boss,JP,会食の店について上司に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「そちらは、[modifier]美味しくないかもしれませんが、静かでいい店です」
+美味しい,acknowledge,boss,JP,上司に強く勧められた店を、大輔は半信半疑で訪れました。料理に感動して、翌日上司に言います。「あのお店、[modifier]美味しかったです。教えていただいてありがとうございます」
+美味しい,neutral,boss,JP,上司に、接待で使った店の料理がどれくらい美味しかったか聞かれ、大輔は率直に答えます。「料理、[modifier]美味しかったです。値段の割には十分でした」
+美味しい,annoyed,boss,JP,料理人の大輔は、時間をかけて仕上げた新メニューの試作を出しました。ところが料理長が味見のあとで大量の香辛料を足してしまい、元の風味が飛んでしまいました。苛立った大輔は言います。「これ、[modifier]美味しくなくなってしまった気がするんですけど」
+美味しい,encouraging,boss,JP,上司が家族と作ったお菓子を職場に持ってきましたが、少し焼きすぎでした。気にしている様子の上司を、大輔が励まします。「これ、[modifier]美味しいですよ。香ばしくて私はこのくらいが好きです」
+美味しい,warning,boss,EN,"The boss is choosing a restaurant for a client dinner. Wanting to be helpful, Daisuke points out hesitantly: ""I've heard the food there isn't [modifier] tasty these days — might it be worth considering another place as well?"""
+美味しい,non-committal,boss,EN,"Asked by his boss for his view on where to hold the dinner, Daisuke, not wanting to assert his opinion, cautiously replies: ""It might not be [modifier] tasty, but it's a quiet, pleasant place."""
+美味しい,acknowledge,boss,EN,"Daisuke visits, half-convinced, a restaurant his boss strongly recommended. Moved by the food, he tells his boss the next day: ""It was [modifier]tasty. Thank you for telling me about it."""
+美味しい,neutral,boss,EN,"Asked by his boss how tasty the food was at the restaurant they used for the client dinner, Daisuke answers frankly: ""It was [modifier] tasty. Good enough for the price."""
+美味しい,annoyed,boss,EN,"Daisuke, a cook, puts out the prototype of a new dish he spent a long time perfecting. But after tasting it, the head chef adds a huge amount of spice and the original flavor is gone. Irritated, Daisuke says: ""I feel like this isn't [modifier] tasty anymore."""
+美味しい,encouraging,boss,EN,"The boss brings in sweets he made with his family, but they are slightly overbaked. Seeing that he is bothered by it, Daisuke reassures him: ""They're [modifier] tasty. Nice and toasty — I like them like this."""
+美味しい,warning,stranger,JP,新しく開いた店の前で、店員が試作の菓子を配って感想を聞いています。大輔は力になりたいと思い、遠慮がちに指摘します。「甘みが強くて、[modifier]美味しく感じない方もいるかもしれません。少し控えられてはいかがでしょうか」
+美味しい,non-committal,stranger,JP,相席になった客に、どのメニューがいいか聞かれます。自分の意見を押し付けたくない大輔は、慎重に答えます。「そちらは、[modifier]美味しくないかもしれませんけど、安くて量も多いですよ」
+美味しい,acknowledge,stranger,JP,店員に絶対美味しいと勧められたメニューを、大輔は半信半疑で頼みました。一口食べて感動して言います。「これ、[modifier]美味しいですね。勧めていただいてありがとうございます」
+美味しい,neutral,stranger,JP,店の前で、入るか迷っている客に、料理がどれくらい美味しかったか聞かれ、大輔は率直に答えます。「料理、[modifier]美味しかったです。値段の割には十分でした」
+美味しい,annoyed,stranger,JP,大輔が注文した料理は、頼んでいないソースが大量にかかった状態で運ばれてきました。休憩時間も限られている中、苛立った大輔は店員を呼び止めて言います。「これ、頼んでいない味付けで[modifier]美味しくなくなってしまったんですけど。作り直していただけますか」
+美味しい,encouraging,stranger,JP,店員が、注文した料理の味付けを間違えたことを何度も謝ってきます。大輔はその店員を励まします。「これも[modifier]美味しいですよ。気にしないでください」
+美味しい,warning,stranger,EN,"Outside a newly opened shop, a member of staff is handing out prototype sweets and asking for impressions. Wanting to be helpful, Daisuke points out hesitantly: ""The sweetness is strong, so some people might not find it very tasty. Might it be worth toning it down [modifier]?"""
+美味しい,non-committal,stranger,EN,"A customer sharing his table asks Daisuke which dish to get. Not wanting to assert his opinion, Daisuke cautiously replies: ""That one might not be [modifier] tasty, but it's cheap and a big portion."""
+美味しい,acknowledge,stranger,EN,"Daisuke orders, half-convinced, the dish a server swore was great. One bite in he says, moved: ""This is [modifier]tasty. Thank you for recommending it."""
+美味しい,neutral,stranger,EN,"Outside the restaurant, someone deciding whether to go in asks Daisuke how tasty the food was, and he answers frankly: ""It was [modifier] tasty. Good enough for the price."""
+美味しい,annoyed,stranger,EN,"The dish Daisuke ordered arrives drenched in a sauce he didn't ask for. With his break already running short, an irritated Daisuke stops the server and says: ""This came with a seasoning I didn't order and it is [modifier] tasty. Could you remake it?"""
+美味しい,encouraging,stranger,EN,"A server keeps apologizing for having got the seasoning wrong on Daisuke's order. Daisuke reassures her: ""This is [modifier] tasty too. Please don't worry about it."""
+綺麗,warning,friend,JP,友人が部室の飾り付けを終えて大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「そこの配色だけ、[modifier]綺麗じゃない気がするから、色を変えたらどう？」
+綺麗,non-committal,friend,JP,友人にデートで行く場所について相談されます。自分の意見を押し付けたくない大輔は、慎重に答えます。「そこ、景色は[modifier]綺麗じゃないかもしれないけど、料理は美味しいよ」
+綺麗,acknowledge,friend,JP,古いからと大輔が敬遠していた庭園に、友人が絶対綺麗だと言って連れて行きます。半信半疑だったのですが、整えられた景色に感動して言います。「景色、[modifier]綺麗だね。連れてきてくれてありがとう」
+綺麗,neutral,friend,JP,旅行から帰った大輔は、次に行こうか迷っている友人に、その場所がどれくらい綺麗だったか聞かれ、率直に答えます。「あそこ、[modifier]綺麗だったよ。写真は数枚撮ったくらいかな」
+綺麗,annoyed,friend,JP,大輔が来客のために家具の配置まで整えた部屋に、友人が荷物を次々と置いていって台無しにされました。苛立った大輔は言います。「整えたばっかりなのに、[modifier]綺麗じゃなくなっちゃったんだけど！」
+綺麗,encouraging,friend,JP,友人が描いてくれた絵の線が、少し歪んでいます。それを申し訳ないと言ってきた友人を、大輔が励まします。「絵、[modifier]綺麗に描けてるよ。線はあとで整えられるし」
+綺麗,warning,friend,EN,"A friend finishes decorating the clubroom and shows Daisuke. Wanting to be helpful, Daisuke points out hesitantly: ""Just that colour combination doesn't look [modifier] nice to me, so what if you changed it?"""
+綺麗,non-committal,friend,EN,"A friend asks Daisuke for advice on where to go on a date. Not wanting to assert his opinion, Daisuke cautiously replies: ""The view there might not be [modifier] nice, but the food is good."""
+綺麗,acknowledge,friend,EN,"A friend takes Daisuke to a garden he had been avoiding because it was old, insisting it is beautiful. He was half-convinced, but the well-kept scenery moves him: ""This is [modifier]nice. Thanks for bringing me here."""
+綺麗,neutral,friend,EN,"Back from his trip, Daisuke is asked by a friend who is deciding whether to go next how nice the place was, and he answers frankly: ""It was [modifier] nice. I only took a few photos."""
+綺麗,annoyed,friend,EN,"A friend keeps piling bags into the room Daisuke had arranged down to the furniture placement for their guests, ruining it. Irritated, Daisuke says: ""I just got it all set up, and now it's [modifier] nice to look at!"""
+綺麗,encouraging,friend,EN,"The lines in a drawing a friend made for him came out a little uneven. Since she apologizes for it, Daisuke reassures her: ""It's drawn [modifier] nicely. The lines can be cleaned up later."""
+綺麗,warning,colleague,JP,商品の撮影写真を選んだ同僚が、それを大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「その一枚だけ、[modifier]綺麗じゃない気がするので、撮り直されてはどうですか？」
+綺麗,non-committal,colleague,JP,買うアクセサリーについて同僚に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「そちらは、[modifier]綺麗じゃないかもしれないですけど、丈夫らしいですね」
+綺麗,acknowledge,colleague,JP,同僚が絶対綺麗だと勧めてきた展望台に、大輔は半信半疑で行きました。広がる夜景に感動して、翌日その同僚に言います。「夜景、[modifier]綺麗でした。教えてくれてありがとうございます」
+綺麗,neutral,colleague,JP,出張から戻った大輔は、同じ場所に行く同僚に、その施設がどれくらい綺麗だったか聞かれ、率直に答えます。「あそこ、[modifier]綺麗でした。写真を撮るほどではなかったですけど」
+綺麗,annoyed,colleague,JP,来客のために大輔が整えた会議室に、同僚が資料や私物を積み上げていきました。来客まで時間もなく、苛立った大輔は言います。「これ、[modifier]綺麗じゃなくなっちゃったんですけど。時間がないので、どけてもらえますか」
+綺麗,encouraging,colleague,JP,同僚が作った資料の図が、少し崩れて印刷されてしまいました。それを申し訳ないと言ってきた同僚を、大輔が励まします。「図、[modifier]綺麗にできてますよ。次の版で直せば十分です」
+綺麗,warning,colleague,EN,"A colleague who has picked the product photos shows them to Daisuke. Wanting to be helpful, Daisuke points out hesitantly: ""Just that one doesn't look [modifier] nice to me, so what if you reshot it?"""
+綺麗,non-committal,colleague,EN,"Asked by a colleague for his view on which accessory to buy, Daisuke, not wanting to assert his opinion, cautiously replies: ""That one might not be [modifier] nice-looking, but it's supposed to be durable."""
+綺麗,acknowledge,colleague,EN,"Daisuke goes, half-convinced, to an observation deck a colleague swore was beautiful. Moved by the night view, he tells the colleague the next day: ""It was [modifier]nice. Thanks for telling me."""
+綺麗,neutral,colleague,EN,"Back from a business trip, Daisuke is asked by a colleague heading to the same place how nice the facility was, and he answers frankly: ""It was [modifier] nice. Not enough to take photos of, though."""
+綺麗,annoyed,colleague,EN,"A colleague has stacked documents and personal items all over the meeting room Daisuke had set up for the clients. With little time left before they arrive, an irritated Daisuke says: ""This is [modifier] nice to look at anymore. We're short on time, so could you move it?"""
+綺麗,encouraging,colleague,EN,"A diagram in a colleague's document came out slightly misaligned in print. Since she apologizes for it, Daisuke reassures her: ""It looks [modifier] nice. Fixing it in the next version is plenty."""
+綺麗,warning,boss,JP,上司が会社案内に載せる写真を選んで大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「その一枚だけ、[modifier]綺麗に見えないかもしれません。差し替えられてはいかがでしょうか」
+綺麗,non-committal,boss,JP,贈答品について上司に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「そちらは、[modifier]綺麗に見えないかもしれませんが、丈夫です」
+綺麗,acknowledge,boss,JP,上司に強く勧められた庭園を、大輔は半信半疑で訪れました。整えられた景色に感動して、翌日上司に言います。「景色、[modifier]綺麗でした。教えていただいてありがとうございます」
+綺麗,neutral,boss,JP,上司に、視察してきた施設がどれくらい綺麗だったか聞かれ、大輔は率直に答えます。「あそこ、[modifier]綺麗でした。写真を撮るほどではありませんでした」
+綺麗,annoyed,boss,JP,来客のために大輔が整えた会議室に、上司が荷物や上着を置いていきました。せっかく整えたのにと思いながらも、苛立った大輔は言います。「この配置だと[modifier]綺麗に見えないかもしれないので、お荷物は隣に移しておきますね」
+綺麗,encouraging,boss,JP,上司が作った資料の図が、少し崩れて印刷されてしまいました。気にしている様子の上司を、大輔が励まします。「図、[modifier]綺麗にできていますよ。次の版で直せば十分だと思います」
+綺麗,warning,boss,EN,"The boss picks out photos for the company brochure and shows them to Daisuke. Wanting to be helpful, Daisuke points out hesitantly: ""Just that one might not look [modifier] as nice. Might it be worth swapping out?"""
+綺麗,non-committal,boss,EN,"Asked by his boss for his view on a corporate gift, Daisuke, not wanting to assert his opinion, cautiously replies: ""That one might not look [modifier] nice, but it's durable."""
+綺麗,acknowledge,boss,EN,"Daisuke visits, half-convinced, a garden his boss strongly recommended. Moved by the well-kept scenery, he tells his boss the next day: ""It was [modifier]nice. Thank you for telling me about it."""
+綺麗,neutral,boss,EN,"Asked by his boss how nice the facility he inspected was, Daisuke answers frankly: ""It was [modifier] nice. Not enough to take photos of."""
+綺麗,annoyed,boss,EN,"The boss has left his bags and coat in the meeting room Daisuke had set up for the clients. Thinking of all the work he had put in, Daisuke, irritated, says: ""It might not look [modifier] as nice arranged like this, so I'll move your things next door."""
+綺麗,encouraging,boss,EN,"A diagram in the boss's document came out slightly misaligned in print. Seeing that he is bothered by it, Daisuke reassures him: ""It looks [modifier] nice. Fixing it in the next version is plenty, I think."""
+綺麗,warning,stranger,JP,花屋の店員が、店先に並べ終えた鉢の配置を大輔に見せて感想を聞いてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「その一角だけ、[modifier]綺麗に見えないかもしれません。色を分けられてはいかがでしょうか」
+綺麗,non-committal,stranger,JP,相席になった客に、どちらの土産物がいいか聞かれます。自分の意見を押し付けたくない大輔は、慎重に答えます。「そちらは、[modifier]綺麗じゃないかもしれませんけど、丈夫そうですよ」
+綺麗,acknowledge,stranger,JP,宿のフロント係に絶対綺麗だと勧められた散歩道を、大輔は半信半疑で歩きました。広がる景色に感動して、戻ってから言います。「景色、[modifier]綺麗でした。教えていただいてありがとうございます」
+綺麗,neutral,stranger,JP,展望台の入口で、これから上がる客に、景色がどれくらい綺麗だったか聞かれ、大輔は率直に答えます。「景色、[modifier]綺麗でした。写真を撮るほどではなかったですけど」
+綺麗,annoyed,stranger,JP,大輔が朝から手入れをした店先の花壇に、通行人が自転車を停めて花が倒れてしまいました。苛立った大輔はその人を呼び止めて言います。「せっかく整えたのに、[modifier]綺麗じゃなくなってしまったんですけど。移動していただけますか」
+綺麗,encouraging,stranger,JP,宿のフロント係が、部屋の内装が古いことを何度も謝ってきます。大輔はその係員を励まします。「お部屋、[modifier]綺麗ですよ。手入れが行き届いているのが分かります」
+綺麗,warning,stranger,EN,"A florist shows Daisuke the pots she has finished arranging outside the shop and asks what he thinks. Wanting to be helpful, Daisuke points out hesitantly: ""Just that one corner might not look [modifier] nice. Might it be worth separating the colours?"""
+綺麗,non-committal,stranger,EN,"A customer sharing his table asks Daisuke which souvenir is better. Not wanting to assert his opinion, Daisuke cautiously replies: ""That one might not be [modifier] nice-looking, but it looks durable."""
+綺麗,acknowledge,stranger,EN,"Daisuke walks, half-convinced, a path the hotel receptionist swore was beautiful. Moved by the view that opens up, he says on returning: ""It was [modifier]nice. Thank you for telling me about it."""
+綺麗,neutral,stranger,EN,"At the entrance to the observation deck, someone about to go up asks Daisuke how nice the view was, and he answers frankly: ""It was [modifier] nice. Not enough to take photos of, though."""
+綺麗,annoyed,stranger,EN,"A passerby has parked a bicycle in the flower bed outside the shop that Daisuke had been tending since morning, knocking the flowers over. Irritated, Daisuke stops the person and says: ""I had just got it looking right and now it's [modifier] nice to look at. Could you move it?"""
+綺麗,encouraging,stranger,EN,"The hotel receptionist keeps apologizing for how old the room's interior is. Daisuke reassures her: ""It's [modifier] nice. You can tell it's been well looked after."""
+遅れている,warning,friend,JP,友人が同窓会当日の移動をバスで組んでいます。大輔は力になりたいと思い、遠慮がちに指摘します。「その時間帯のバス、今[modifier]遅れてるみたいだから、電車にしたらどう？」
+遅れている,non-committal,friend,JP,大輔は友人とどの交通手段で行くか相談しています。自分の意見を押し付けたくない大輔は、慎重に答えます。「バス、[modifier]遅れてるみたいだけど、乗り換えなしで楽だよ」
+遅れている,acknowledge,friend,JP,よく遅れるからと大輔が避けていたバス路線を、友人が最近はダイヤが見直されたと言って勧めます。半信半疑で乗ったのですが、時刻通りに着いたのを見て感心して言います。「バス、[modifier]遅れてないね。教えてくれてありがとう」
+遅れている,neutral,friend,JP,待ち合わせ場所に着いた大輔は、これから向かう友人に、バスがどれくらい遅れているか聞かれ、率直に答えます。「バス、[modifier]遅れてるよ。十分くらいだから、間に合うと思う」
+遅れている,annoyed,friend,JP,大輔は友人と高校の同窓会の準備をしています。急ぎで店の予約をしてと伝えたのに、数日経っても何のアップデートもありません。当日が迫る中、焦りと苛立ちで、大輔は言います。「お店の予約、[modifier]遅れてるんだけど、お願いだから今日中にしてくれる？」
+遅れている,encouraging,friend,JP,友人が引き受けた準備が、少し予定より押しています。それを申し訳ないと言ってきた友人を、大輔が励まします。「準備、[modifier]遅れてないよ。まだ二日あるし、全然間に合う」
+遅れている,warning,friend,EN,"A friend has planned the travel for the day of the reunion by bus. Wanting to be helpful, Daisuke points out hesitantly: ""The bus at that hour looks [modifier] delayed right now, so what if we took the train?"""
+遅れている,non-committal,friend,EN,"Daisuke and a friend are discussing how to get there. Not wanting to assert his opinion, Daisuke cautiously replies: ""The bus seems [modifier] delayed, but it's easy since there's no transfer."""
+遅れている,acknowledge,friend,EN,"A friend recommends a bus route Daisuke had been avoiding because it was often delayed, saying the timetable has been revised. He rode it half-convinced, and seeing it arrive right on time he says, impressed: ""The bus isn't [modifier] delayed. Thanks for telling me."""
+遅れている,neutral,friend,EN,"Having arrived at the meeting spot, Daisuke is asked by a friend still on the way how delayed the buses are, and he answers frankly: ""The bus is [modifier] delayed. About ten minutes, so I think you'll make it."""
+遅れている,annoyed,friend,EN,"Daisuke is preparing for his high school reunion with a friend. He asked her to book the restaurant urgently, but days have passed with no update at all. With the day approaching, anxious and irritated, Daisuke says: ""The booking is [modifier] delayed — please, can you just get it done today?"""
+遅れている,encouraging,friend,EN,"The preparations a friend took on are running a little behind schedule. Since she apologizes for it, Daisuke reassures her: ""It's not that delayed. We still have two days, [modifier]we'll make it fine."""
+遅れている,warning,colleague,JP,社員旅行の移動手段を担当している同僚が、バスで行く案を見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「その時間帯のバス、今[modifier]遅れてるみたいなので、電車にされてはどうですか？」
+遅れている,non-committal,colleague,JP,出張の移動手段について同僚に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「バスは、[modifier]遅れてるみたいですけど、乗り換えなしで楽ですね」
+遅れている,acknowledge,colleague,JP,よく遅れるからと大輔が避けていたバス路線を、同僚が最近はダイヤが見直されたと勧めます。半信半疑で乗ったのですが、時刻通りに着いたのを見て感心して言います。「バス、[modifier]遅れてないですね。教えてくれてありがとうございます」
+遅れている,neutral,colleague,JP,出社した大輔は、同じ路線で通っている同僚に、バスがどれくらい遅れていたか聞かれ、率直に答えます。「バス、[modifier]遅れていました。十分ほどだったので、朝礼には間に合いました」
+遅れている,annoyed,colleague,JP,大輔は、一緒に担当している急ぎの仕事で、同僚に任せた作業が数日遅れています。まだ一向に手をつけていないにも関わらず、暇そうにしている様子に苛立った大輔は言います。「お願いした仕事、[modifier]遅れているんですけど、今日中に出してもらえますか？」
+遅れている,encouraging,colleague,JP,慣れない作業を任された同僚の進捗が、少し予定より押しています。それを申し訳ないと言ってきた同僚を、大輔が励まします。「作業、[modifier]遅れてないですよ。ここからは私も入りますし、十分間に合います」
+遅れている,warning,colleague,EN,"The colleague in charge of transportation for the company trip shows Daisuke his plan to go by bus. Wanting to be helpful, Daisuke points out hesitantly: ""The bus at that hour looks [modifier] delayed right now, so what if you took the train?"""
+遅れている,non-committal,colleague,EN,"Asked by a colleague for his view on how to travel for the business trip, Daisuke, not wanting to assert his opinion, cautiously replies: ""The bus seems [modifier] delayed, but it's easy since there's no transfer."""
+遅れている,acknowledge,colleague,EN,"A colleague recommends a bus route Daisuke had been avoiding because it was often delayed, saying the timetable has been revised. He rode it half-convinced, and seeing it arrive right on time he says, impressed: ""The bus isn't [modifier] delayed. Thanks for telling me."""
+遅れている,neutral,colleague,EN,"Arriving at work, Daisuke is asked by a colleague who commutes on the same route how delayed the buses were, and he answers frankly: ""The bus was [modifier] delayed. About ten minutes, so I still made the morning meeting."""
+遅れている,annoyed,colleague,EN,"On an urgent job they are handling together, the work Daisuke handed to a colleague is days behind. He still hasn't touched it and looks like he has time on his hands; irritated, Daisuke says: ""The work I asked you for is [modifier] delayed. Could you get it to me by the end of today?"""
+遅れている,encouraging,colleague,EN,"A colleague given unfamiliar work is running a little behind schedule. Since she apologizes for it, Daisuke reassures her: ""It's not that delayed. I'll join in from here, [modifier]we'll make it comfortably."""
+遅れている,warning,boss,JP,上司が視察の移動をバスで組んでいます。大輔は力になりたいと思い、遠慮がちに指摘します。「その時間帯のバス、今[modifier]遅れているようですので、電車にされてはいかがでしょうか」
+遅れている,non-committal,boss,JP,出張の移動手段について上司に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「バスは、[modifier]遅れているようですが、乗り換えがなく楽です」
+遅れている,acknowledge,boss,JP,よく遅れるからと大輔が避けていたバス路線を、上司が最近はダイヤが見直されたと勧めます。半信半疑で乗ったのですが、時刻通りに着いたのを見て感心し、翌日上司に言います。「バス、[modifier]遅れていませんでした。教えていただいてありがとうございます」
+遅れている,neutral,boss,JP,上司に、朝のバスがどれくらい遅れていたか聞かれ、大輔は率直に答えます。「バス、[modifier]遅れていました。十分ほどだったので、朝礼には間に合いました」
+遅れている,annoyed,boss,JP,大輔は、急ぎの案件について、上司に申請した内容が数日経ってもまだ確認されません。苛立った大輔は言います。「申請させていただいた内容の確認が[modifier]遅れているようなのですが、今日中にご確認いただくことは可能でしょうか」
+遅れている,encouraging,boss,JP,上司が引き受けた確認作業が、少し予定より押しています。気にしている様子の上司を、大輔が励まします。「確認、[modifier]遅れていませんよ。明日の朝までにいただければ十分間に合います」
+遅れている,warning,boss,EN,"The boss has planned the travel for the site visit by bus. Wanting to be helpful, Daisuke points out hesitantly: ""The bus at that hour appears to be [modifier] delayed right now — might it be worth taking the train?"""
+遅れている,non-committal,boss,EN,"Asked by his boss for his view on how to travel for the business trip, Daisuke, not wanting to assert his opinion, cautiously replies: ""The bus appears to be [modifier] delayed, but it's easy since there are no transfers."""
+遅れている,acknowledge,boss,EN,"The boss recommends a bus route Daisuke had been avoiding because it was often delayed, saying the timetable has been revised. He rode it half-convinced, and, impressed that it arrived right on time, he tells his boss the next day: ""The bus wasn't [modifier] delayed. Thank you for telling me."""
+遅れている,neutral,boss,EN,"Asked by his boss how delayed the buses were that morning, Daisuke answers frankly: ""The bus was [modifier] delayed. About ten minutes, so I still made the morning meeting."""
+遅れている,annoyed,boss,EN,"On an urgent matter, the application Daisuke submitted to his boss still hasn't been reviewed days later. Irritated, Daisuke says: ""The review of what I submitted seems to be [modifier] delayed — would it be possible for you to look at it today?"""
+遅れている,encouraging,boss,EN,"The review the boss took on is running a little behind schedule. Seeing that he is bothered by it, Daisuke reassures him: ""It's not [modifier]delayed. If I have it by tomorrow morning we'll make it comfortably."""
+遅れている,warning,stranger,JP,バス営業所の係員が、停留所に掲示する運行情報を書き終えて大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「この路線のバスも今[modifier]遅れているようですので、書き足されてはいかがでしょうか」
+遅れている,non-committal,stranger,JP,バス停で隣に立った客に、バスと電車のどちらがいいか聞かれます。自分の意見を押し付けたくない大輔は、慎重に答えます。「バスは、[modifier]遅れているみたいですけど、乗り換えがなくて楽ですよ」
+遅れている,acknowledge,stranger,JP,運転手に、この路線は最近ダイヤが見直されたと勧められ、大輔は半信半疑で乗りました。時刻通りに着いたのを見て感心し、降車時に運転手に言います。「バス、[modifier]遅れていませんでしたね。教えていただいてありがとうございます」
+遅れている,neutral,stranger,JP,バス停で、これから乗る客に、バスがどれくらい遅れているか聞かれ、大輔は率直に答えます。「バス、[modifier]遅れています。十分ほどですので、急げば間に合うと思います」
+遅れている,annoyed,stranger,JP,大輔は昼食にサンドイッチを注文したのですが、三十分待っても来ません。他の客には次々と料理が運ばれ、休憩時間もあと十分となって焦っています。注文を受けた店員も昼休憩に入ってしまい、苛立った大輔は二度目に店員を呼び止めて言います。「注文したもの、[modifier]遅れているんですけど、あとどれくらいで出来上がりますか？」
+遅れている,encouraging,stranger,JP,運転手が、バスの遅れについて何度も頭を下げて謝ってきます。大輔はその運転手を励まします。「バス、[modifier]遅れていませんよ。この程度なら誰も困りません」
+遅れている,warning,stranger,EN,"A bus company employee finishes writing up the service information to post at the stop and shows it to Daisuke. Wanting to be helpful, Daisuke points out hesitantly: ""The bus on this route also appears to be [modifier] delayed right now — might it be worth adding?"""
+遅れている,non-committal,stranger,EN,"A passenger standing next to him at the bus stop asks whether the bus or the train is better. Not wanting to assert his opinion, Daisuke cautiously replies: ""The bus seems [modifier] delayed, but it's easy since there are no transfers."""
+遅れている,acknowledge,stranger,EN,"A driver tells Daisuke the timetable on this route was recently revised, and he boards half-convinced. Impressed that it arrives right on time, he tells the driver as he gets off: ""The bus wasn't [modifier] delayed. Thank you for telling me."""
+遅れている,neutral,stranger,EN,"At the bus stop, someone about to board asks Daisuke how delayed the buses are, and he answers frankly: ""The bus is [modifier] delayed. About ten minutes, so I think you'll make it if you hurry."""
+遅れている,annoyed,stranger,EN,"Daisuke ordered a sandwich for lunch, but it still hasn't come after thirty minutes. Other customers are getting their food one after another and his break is down to ten minutes. The server who took his order has gone on break too, and, irritated, Daisuke stops a server for the second time and says: ""What I ordered is [modifier] delayed. How much longer will it be?"""
+遅れている,encouraging,stranger,EN,"The driver keeps bowing and apologizing for the bus running late. Daisuke reassures him: ""The bus isn't [modifier]delayed. Nobody's inconvenienced by this much."""
+寒い,warning,friend,JP,友人が花見の場所として川辺の席を提案してきます。大輔は力になりたいと思い、遠慮がちに指摘します。「そこ、夜は[modifier]寒いと思うから、時間を早めたらどう？」
+寒い,non-committal,friend,JP,友人に何を着ていけばいいか相談されます。自分の意見を押し付けたくない大輔は、慎重に答えます。「それ、今日は[modifier]寒いみたいだけど、身軽で動きやすいよ」
+寒い,acknowledge,friend,JP,薄いからと大輔が疑っていたコートを、友人が絶対暖かいと勧めます。半信半疑で買って着てきたのですが、風を感じない暖かさに感心して言います。「外、[modifier]寒くない！勧めてくれてありがとう」
+寒い,neutral,friend,JP,これから出かける友人に、大輔は外がどれくらい寒いか聞かれ、率直に答えます。「外、[modifier]寒いよ。上着はあった方がいいかもしれない」
+寒い,annoyed,friend,JP,大輔が暖房を効かせた部屋で作業していると、友人が断りもなく窓を全開にして、一気に冷え込みました。勝手な行動の多い友人に苛立った大輔は言います。「部屋、[modifier]寒いんだけど、窓閉めてくれる？」
+寒い,encouraging,friend,JP,友人の提案で来たテラス席が少し寒いです。それを申し訳ないと言ってきた友人を、大輔が励まします。「ここ、[modifier]寒くないよ。お茶を飲めばすぐ温まるし」
+寒い,warning,friend,EN,"A friend suggests a riverside spot for the cherry blossom viewing. Wanting to be helpful, Daisuke points out hesitantly: ""I think it gets [modifier] cold there at night, so what if we moved it earlier?"""
+寒い,non-committal,friend,EN,"A friend asks Daisuke what she should wear. Not wanting to assert his opinion, Daisuke cautiously replies: ""It seems [modifier] cold today, but that's light and easy to move in."""
+寒い,acknowledge,friend,EN,"A friend recommends a coat Daisuke was doubtful about because it was so thin, insisting it is warm. He bought it half-convinced and wore it out, and, impressed by how no wind gets through, he says: ""I'm [modifier] cold! Thanks for recommending it."""
+寒い,neutral,friend,EN,"Asked by a friend who is about to head out how cold it is outside, Daisuke answers frankly: ""It's [modifier] cold. You might want a jacket."""
+寒い,annoyed,friend,EN,"Daisuke is working in a room he had warmed up when a friend throws the window wide open without asking, and it turns cold fast. Irritated at a friend who is always doing things without asking, Daisuke says: ""The room is [modifier] cold. Can you shut the window?"""
+寒い,encouraging,friend,EN,"The terrace seats a friend suggested turn out to be a little cold. Since she apologizes for it, Daisuke reassures her: ""It's not [modifier]cold. We'll warm right up once we have some tea."""
+寒い,warning,colleague,JP,歓迎会の会場に屋外のテラス席を押さえた同僚が、その案を大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「そこ、この時期は[modifier]寒いと思うので、室内にされてはどうですか？」
+寒い,non-committal,colleague,JP,視察当日の服装について同僚に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「それは、当日は[modifier]寒いみたいですけど、身軽で動きやすいですね」
+寒い,acknowledge,colleague,JP,薄いからと大輔が疑っていた作業用の上着を、同僚が絶対暖かいと勧めます。半信半疑で着てみたのですが、倉庫でも冷えない暖かさに感心して言います。「倉庫、[modifier]寒くないですね。教えてくれてありがとうございます」
+寒い,neutral,colleague,JP,倉庫から戻った大輔は、これから入る同僚に、中がどれくらい寒いか聞かれ、率直に答えます。「中、[modifier]寒いです。上着はあった方がいいかもしれません」
+寒い,annoyed,colleague,JP,空調の設定を管理している同僚が温度を下げすぎたため、オフィスが冷え込んでいます。上着を借りることもできず、苛立った大輔は言います。「オフィス、[modifier]寒いんですけど、少し上げてもらえますか」
+寒い,encouraging,colleague,JP,同僚が押さえてくれた会場が、思ったより冷える部屋でした。それを申し訳ないと言ってきた同僚を、大輔が励まします。「ここ、[modifier]寒くないですよ。人が入ればすぐ気にならなくなります」
+寒い,warning,colleague,EN,"The colleague who booked an outdoor terrace for the welcome party shows Daisuke the plan. Wanting to be helpful, Daisuke points out hesitantly: ""I think it's [modifier] cold there this time of year, so what if you went indoors?"""
+寒い,non-committal,colleague,EN,"Asked by a colleague for his view on what to wear on the day of the site visit, Daisuke, not wanting to assert his opinion, cautiously replies: ""It seems [modifier] cold that day, but that's light and easy to move in."""
+寒い,acknowledge,colleague,EN,"A colleague recommends a work jacket Daisuke was doubtful about because it was so thin, insisting it is warm. He tried it half-convinced, and, impressed that he doesn't get cold even in the warehouse, he says: ""I'm [modifier] cold. Thanks for telling me."""
+寒い,neutral,colleague,EN,"Back from the warehouse, Daisuke is asked by a colleague about to go in how cold it is inside, and he answers frankly: ""It's [modifier] cold. You might want a jacket."""
+寒い,annoyed,colleague,EN,"The colleague who manages the air conditioning has turned it down too far and the office is freezing. Daisuke can't even borrow a jacket, and, irritated, he says: ""It's pretty cold. Could you turn it up [modifier]?"""
+寒い,encouraging,colleague,EN,"The venue a colleague booked turns out to be a colder room than expected. Since she apologizes for it, Daisuke reassures her: ""It's not [modifier]cold. Once people are in, nobody will notice."""
+寒い,warning,boss,JP,上司が来客との打ち合わせに、空調の効きすぎた会議室を指定しています。大輔は力になりたいと思い、遠慮がちに指摘します。「あの部屋、[modifier]寒いように思いますので、別室にされてはいかがでしょうか」
+寒い,non-committal,boss,JP,視察当日の服装について上司に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「そちらは、当日は[modifier]寒いようですが、身軽で動きやすいです」
+寒い,acknowledge,boss,JP,薄いからと大輔が疑っていたコートを、上司が絶対暖かいと勧めます。半信半疑で買って着てきたのですが、風を感じない暖かさに感心して、翌日上司に言います。「外、[modifier]寒くありませんでした。教えていただいてありがとうございます」
+寒い,neutral,boss,JP,上司に、視察先がどれくらい寒かったか聞かれ、大輔は率直に答えます。「現場、[modifier]寒かったです。上着があれば問題ない程度でした」
+寒い,annoyed,boss,JP,上司が空調を下げた会議室で、打ち合わせがもう一時間続いています。大輔は手が冷えて集中できず、周囲も皆寒そうにしています。周りが見えていない上司に苛立った大輔は、空調を上げることにし、上司に言います。「この部屋、[modifier]寒いようなので、温度を上げておきますね」
+寒い,encouraging,boss,JP,上司が押さえた会場が、思ったより冷える部屋でした。気にしている様子の上司を、大輔が励まします。「ここ、[modifier]寒くないですよ。人が入ればすぐ気にならなくなると思います」
+寒い,warning,boss,EN,"The boss has designated an over-air-conditioned meeting room for the discussion with the clients. Wanting to be helpful, Daisuke points out hesitantly: ""I think that room is [modifier] cold — might it be worth using a different one?"""
+寒い,non-committal,boss,EN,"Asked by his boss for his view on what to wear on the day of the site visit, Daisuke, not wanting to assert his opinion, cautiously replies: ""It appears to be [modifier] cold that day, but that's light and easy to move in."""
+寒い,acknowledge,boss,EN,"The boss recommends a coat Daisuke was doubtful about because it was so thin, insisting it is warm. He bought it half-convinced and wore it out, and, impressed by how no wind gets through, he tells his boss the next day: ""I wasn't [modifier] cold. Thank you for telling me."""
+寒い,neutral,boss,EN,"Asked by his boss how cold the site was, Daisuke answers frankly: ""It was [modifier] cold. Fine as long as you had a jacket."""
+寒い,annoyed,boss,EN,"An hour into a meeting in a room where the boss has turned the air conditioning down, Daisuke's hands are too cold to concentrate and everyone around him looks cold too. Irritated at a boss who isn't reading the room, Daisuke decides to turn the air conditioning up and says to him: ""It seems [modifier] cold in this room, so I'll turn the temperature up."""
+寒い,encouraging,boss,EN,"The venue the boss booked turns out to be a colder room than expected. Seeing that he is bothered by it, Daisuke reassures him: ""It's not [modifier]cold. Once people are in, I don't think anyone will notice."""
+寒い,warning,stranger,JP,カフェの店員が、外に出したテラス席の配置を大輔に見せて感想を聞いてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「その席、風が通って[modifier]寒いと思います。壁側に寄せられてはいかがでしょうか」
+寒い,non-committal,stranger,JP,店の入口で、隣にいた客にテラスと室内のどちらがいいか聞かれます。自分の意見を押し付けたくない大輔は、慎重に答えます。「テラスは、今日は[modifier]寒いみたいですけど、景色がいいですよ」
+寒い,acknowledge,stranger,JP,薄いからと大輔が疑っていたコートを、店員が絶対暖かいと勧めます。半信半疑で買って着てきたのですが、風を感じない暖かさに感心して、後日店員に言います。「外、[modifier]寒くありませんでした。勧めていただいてありがとうございます」
+寒い,neutral,stranger,JP,店の入口で、これから入る客に、店内がどれくらい寒いか聞かれ、大輔は率直に答えます。「店内、[modifier]寒いです。上着はあった方がいいかもしれません」
+寒い,annoyed,stranger,JP,大輔が入ったカフェは冷房が効きすぎていて、長く座っていられません。席を変えても変わらないので、苛立った大輔は店員を呼び止めて言います。「席が[modifier]寒いんですけど、温度を上げていただけますか」
+寒い,encouraging,stranger,JP,カフェの店員が、空調の効きすぎを何度も謝ってきます。大輔はその店員を励まします。「ここ、[modifier]寒くないですよ。温かい飲み物をいただければ十分です」
+寒い,warning,stranger,EN,"A café server shows Daisuke the layout of the terrace seats they have put outside and asks what he thinks. Wanting to be helpful, Daisuke points out hesitantly: ""I think that seat is [modifier] cold with the wind coming through. Might it be worth moving it against the wall?"""
+寒い,non-committal,stranger,EN,"At the entrance, another customer asks Daisuke whether the terrace or inside is better. Not wanting to assert his opinion, Daisuke cautiously replies: ""The terrace seems [modifier] cold today, but it has a nice view."""
+寒い,acknowledge,stranger,EN,"A shop assistant recommends a coat Daisuke was doubtful about because it was so thin, insisting it is warm. He bought it half-convinced and wore it out, and, impressed by how no wind gets through, he tells the assistant later: ""I wasn't [modifier] cold. Thank you for recommending it."""
+寒い,neutral,stranger,EN,"At the entrance, someone about to go in asks Daisuke how cold it is inside, and he answers frankly: ""It's [modifier] cold. You might want a jacket."""
+寒い,annoyed,stranger,EN,"The café Daisuke has come into has the air conditioning on so high he can't sit for long. Moving seats doesn't help, so, irritated, he stops a server and says: ""It's [modifier] cold at the tables. Could you turn the temperature up?"""
+寒い,encouraging,stranger,EN,"A café server keeps apologizing for the air conditioning being too strong. Daisuke reassures her: ""It's not [modifier]cold. A hot drink is all I need."""
+汚い,warning,friend,JP,友人が来客前の部屋の片付けを終えて大輔に見せてきます。大輔は力になりたいと思い、遠慮がちに指摘します。「そこの棚だけ[modifier]汚いから、拭いておいたらどう？」
+汚い,non-committal,friend,JP,大輔は友人とどの宿に泊まるか相談しています。自分の意見を押し付けたくない大輔は、慎重に答えます。「そこ、[modifier]汚いかもしれないけど、駅から近くて安いよ」
+汚い,acknowledge,friend,JP,古いからと大輔が敬遠していた店に、友人がちゃんと手入れされていると言って連れて行きます。半信半疑だったのですが、清潔な店内に感心して言います。「確かに[modifier]汚くないね。連れてきてくれてありがとう」
+汚い,neutral,friend,JP,内見から戻った大輔は、その部屋を借りようか迷っている友人に、どれくらい汚いか聞かれ、率直に答えます。「部屋、[modifier]汚いよ。軽く拭けば気にならない程度かな」
+汚い,annoyed,friend,JP,大輔は友人とルームシェアをしています。今週は友人が共用スペースを掃除する番なのに、何週間も手をつけられず、物や食器が溜まったままです。何度か声をかけても変わらないので、苛立った大輔は言います。「この部屋[modifier]汚いんだけど、いつになったら綺麗にしてくれるの？」
+汚い,encouraging,friend,JP,友人が先に選んでくれた席が、少し汚れていました。それを申し訳ないと言ってきた友人を、大輔が励まします。「席、[modifier]汚くないよ。ちょっと拭けば全然大丈夫」
+汚い,warning,friend,EN,"A friend finishes tidying the room before guests arrive and shows Daisuke. Wanting to be helpful, Daisuke points out hesitantly: ""Just that shelf is [modifier] dirty, so what if you wiped it down?"""
+汚い,non-committal,friend,EN,"Daisuke and a friend are deciding which place to stay at. Not wanting to assert his opinion, Daisuke cautiously replies: ""That place might be [modifier] dirty, but it's close to the station and cheap."""
+汚い,acknowledge,friend,EN,"A friend takes Daisuke to a restaurant he had been avoiding because it was old, saying it is well looked after. He was half-convinced, but the clean interior impresses him: ""You're right, it's [modifier] dirty. Thanks for bringing me here."""
+汚い,neutral,friend,EN,"Back from the viewing, Daisuke is asked by a friend who is deciding whether to rent the place how dirty it is, and he answers frankly: ""It's [modifier] dirty. A quick wipe and you wouldn't notice, I'd say."""
+汚い,annoyed,friend,EN,"Daisuke shares a flat with a friend. It is the friend's turn to clean the shared space this week, but weeks have gone by untouched and clutter and dishes have piled up. Having mentioned it a few times with nothing changing, irritated, Daisuke says: ""This room is [modifier] dirty. When exactly are you going to clean it?"""
+汚い,encouraging,friend,EN,"The seats a friend picked out ahead of him were a little dirty. Since she apologizes for it, Daisuke reassures her: ""It's not [modifier]dirty. A quick wipe and it's totally fine."""
+汚い,warning,colleague,JP,来客の準備を担当している同僚が、応接室の片付けを終えます。大輔は力になりたいと思い、遠慮がちに指摘します。「そのテーブルだけ[modifier]汚いので、拭いておかれてはどうですか？」
+汚い,non-committal,colleague,JP,出張先の宿について同僚に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「そこ、[modifier]汚いかもしれないですけど、駅から近くて安いですね」
+汚い,acknowledge,colleague,JP,古いからと大輔が敬遠していた食堂を、同僚がちゃんと手入れされていると勧めます。半信半疑で入ったのですが、清潔な店内に感心して言います。「確かに[modifier]汚くないですね。教えてくれてありがとうございます」
+汚い,neutral,colleague,JP,下見から戻った大輔は、これから使う同僚に、その部屋がどれくらい汚いか聞かれ、率直に答えます。「部屋、[modifier]汚いです。軽く拭けば気にならない程度でした」
+汚い,annoyed,colleague,JP,共用スペースの掃除当番だった同僚が何週間も手をつけず、ゴミや食器が溜まったままです。何度か声をかけても変わらないので、苛立った大輔は言います。「この部屋[modifier]汚いんですけど、いつ片付けてもらえますか」
+汚い,encouraging,colleague,JP,同僚が先に押さえてくれた会議室が、少し汚れていました。それを申し訳ないと言ってきた同僚を、大輔が励まします。「部屋、[modifier]汚くないですよ。軽く拭けば全然問題ありません」
+汚い,warning,colleague,EN,"The colleague in charge of preparing for the client visit finishes tidying the reception room. Wanting to be helpful, Daisuke points out hesitantly: ""Just that table is [modifier] dirty, so what if you wiped it down?"""
+汚い,non-committal,colleague,EN,"Asked by a colleague for his view on accommodation for the business trip, Daisuke, not wanting to assert his opinion, cautiously replies: ""That place might be [modifier] dirty, but it's close to the station and cheap."""
+汚い,acknowledge,colleague,EN,"A colleague recommends a canteen Daisuke had been avoiding because it was old, saying it is well looked after. He went in half-convinced, and the clean interior impresses him: ""You're right, it's [modifier] dirty. Thanks for telling me."""
+汚い,neutral,colleague,EN,"Back from checking the space, Daisuke is asked by a colleague who will be using it how dirty the room is, and he answers frankly: ""It's [modifier] dirty. A quick wipe and you wouldn't notice."""
+汚い,annoyed,colleague,EN,"The colleague whose turn it was to clean the shared space hasn't touched it for weeks, and rubbish and dishes have piled up. Daisuke has mentioned it a few times with nothing changing, and, irritated, he says: ""This room is [modifier] dirty. When are you going to clean it?"""
+汚い,encouraging,colleague,EN,"The meeting room a colleague booked ahead of him was a little dirty. Since she apologizes for it, Daisuke reassures her: ""It's not [modifier]dirty. A quick wipe and there's no problem at all."""
+汚い,warning,boss,JP,来客との打ち合わせに上司が指定した部屋は、壁と床に落ちない汚れが残っています。大輔だけでは対処できず、部屋を変えるか清掃を手配するか上司の判断が要るため、力になりたいと思い、遠慮がちに指摘します。「あの部屋、[modifier]汚いように見えるかもしれません。別室に変えていただくことはできますでしょうか」
+汚い,non-committal,boss,JP,出張先の宿について上司に意見を求められた大輔は、自分の意見を押し付けたくないので、慎重に答えます。「そちらは、[modifier]汚いかもしれませんが、駅から近くて安いです」
+汚い,acknowledge,boss,JP,古いからと大輔が敬遠していた店を、上司がちゃんと手入れされていると勧めます。半信半疑で入ったのですが、清潔な店内に感心して、翌日上司に言います。「確かに[modifier]汚くありませんでした。教えていただいてありがとうございます」
+汚い,neutral,boss,JP,上司に、下見してきた会場がどれくらい汚かったか聞かれ、大輔は率直に答えます。「会場、[modifier]汚かったです。軽く拭けば気にならない程度でした」
+汚い,annoyed,boss,JP,来客の一時間前、大輔は応接室が片付いていないことに気づきます。準備は上司が自分でやると引き受けたはずなのに、何度確認しても手をつけられていませんでした。またこの人のせいで自分が尻拭いをするのかと思いながらも上司に言います。「この部屋、お客様に[modifier]汚い印象を与えてしまいそうなので、片付けておきますね」
+汚い,encouraging,boss,JP,上司が先に押さえた会議室が、少し汚れていました。気にしている様子の上司を、大輔が励まします。「部屋、[modifier]汚くないですよ。軽く拭けば全然問題ありません」
+汚い,warning,boss,EN,"The room the boss has designated for the discussion with the clients has stains on the wall and floor that won't come off. Daisuke can't deal with it himself — it needs the boss to decide whether to change rooms or call in cleaners — so, wanting to be helpful, he points out hesitantly: ""That room might look [modifier] dirty to them. Would it be possible to move to a different room?"""
+汚い,non-committal,boss,EN,"Asked by his boss for his view on accommodation for the business trip, Daisuke, not wanting to assert his opinion, cautiously replies: ""It might be [modifier] dirty, but it's close to the station and cheap."""
+汚い,acknowledge,boss,EN,"The boss recommends a restaurant Daisuke had been avoiding because it was old, saying it is well looked after. He went in half-convinced, and, impressed by the clean interior, he tells his boss the next day: ""You were right, it wasn't [modifier] dirty. Thank you for telling me."""
+汚い,neutral,boss,EN,"Asked by his boss how dirty the venue he checked was, Daisuke answers frankly: ""It was [modifier] dirty. A quick wipe and you wouldn't notice."""
+汚い,annoyed,boss,EN,"An hour before the clients arrive, Daisuke notices the reception room hasn't been tidied. The boss had taken on the preparations himself, but no matter how many times Daisuke checked, nothing had been done. Thinking that he is going to end up cleaning up after this man again, Daisuke says to his boss: ""This room might give the clients a [modifier] dirty impression, so I'll tidy it up."""
+汚い,encouraging,boss,EN,"The meeting room the boss booked ahead of him was a little dirty. Seeing that he is bothered by it, Daisuke reassures him: ""It's not [modifier]dirty. A quick wipe and there's no problem at all."""
+汚い,warning,stranger,JP,飲食店の店員が、大輔の席の準備を終えて次の席に移ろうとしています。大輔は力になりたいと思い、遠慮がちに指摘します。「そのテーブルの端だけ[modifier]汚れているようです。拭いておかれてはいかがでしょうか」
+汚い,non-committal,stranger,JP,宿の入口で、隣にいた客にどちらの部屋がいいか聞かれます。自分の意見を押し付けたくない大輔は、慎重に答えます。「そちらは、[modifier]汚いみたいですけど、安くて広いですよ」
+汚い,acknowledge,stranger,JP,古いからと大輔が敬遠していた店を、通りかかった店員がちゃんと手入れされていると勧めます。半信半疑で入ったのですが、清潔な店内に感心して言います。「確かに[modifier]汚くないですね。勧めていただいてありがとうございます」
+汚い,neutral,stranger,JP,宿の入口で、これから泊まる客に、部屋がどれくらい汚いか聞かれ、大輔は率直に答えます。「お部屋、[modifier]汚いです。軽く拭けば気にならない程度でした」
+汚い,annoyed,stranger,JP,出張で泊まったホテルの部屋は、床に髪が落ち、水回りに汚れが残っていました。長い移動の後で苛立った大輔は、フロントに行って言います。「部屋が[modifier]汚いんですけど、清掃していただけますか」
+汚い,encouraging,stranger,JP,泊まっているホテルのフロント係が、清掃が行き届いていなかったことを何度も謝ってくるので、大輔は励まします。「お部屋、[modifier]汚くないですよ。気になりませんでしたから」
+汚い,warning,stranger,EN,"A server in the restaurant finishes setting Daisuke's table and is about to move to the next. Wanting to be helpful, Daisuke points out hesitantly: ""Just the edge of that table looks [modifier] dirty. Might it be worth wiping down?"""
+汚い,non-committal,stranger,EN,"At the entrance to the inn, another guest asks Daisuke which room is better. Not wanting to assert his opinion, Daisuke cautiously replies: ""That one seems [modifier] dirty, but it's cheap and spacious."""
+汚い,acknowledge,stranger,EN,"A passing server recommends a restaurant Daisuke had been avoiding because it was old, saying it is well looked after. He went in half-convinced, and the clean interior impresses him: ""You're right, it's [modifier] dirty. Thank you for recommending it."""
+汚い,neutral,stranger,EN,"At the entrance to the inn, someone about to stay there asks Daisuke how dirty the rooms are, and he answers frankly: ""They're [modifier] dirty. A quick wipe and you wouldn't notice."""
+汚い,annoyed,stranger,EN,"The hotel room Daisuke checked into on his business trip has hair on the floor and grime left around the sink. Irritated after a long journey, he goes down to the front desk and says: ""The room is [modifier] dirty. Could you have it cleaned?"""
+汚い,encouraging,stranger,EN,"The receptionist at the hotel Daisuke is staying at keeps apologizing for the cleaning not having been done properly, so Daisuke reassures her: ""The room is [modifier] dirty. I hadn't even noticed."""
