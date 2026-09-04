@@ -38,18 +38,50 @@
             'can think of that would naturally fill the blank, given the situation described. ' +
             'After typing each option, press Enter to add it as its own tag &mdash; ' +
             'you can add as few or as many as you like.</p>' +
-            '<p class="stimulus">There are 36 scenarios in total. There are no right or wrong answers &mdash; ' +
+            '<p class="stimulus">There are 24 scenarios in total. There are no right or wrong answers &mdash; ' +
             'we are interested in your intuitive judgment.</p>' +
             '<b>When you are ready to begin, press the start button.</b>',
         choices: ['Start'],
         margin_vertical: '20px'
     };
 
-    var shuffled_stimuli = jsPsych.randomization.shuffle(stimuli);
+    // stimuliPool (from stimuli.js) contains every predicate x attitude x relationship
+    // combination (6 x 6 x 4 = 144). Each participant sees exactly one scenario for
+    // every (relationship, attitude) pair -- 4 x 6 = 24 scenarios -- with the predicate
+    // for each pair chosen at random.
+    var relationships = Array.from(new Set(stimuliPool.map(function (s) { return s.relationship; })));
+    var attitudes = Array.from(new Set(stimuliPool.map(function (s) { return s.attitude; })));
+    var predicates = Array.from(new Set(stimuliPool.map(function (s) { return s.predicate; })));
+
+    var poolIndex = {};
+    stimuliPool.forEach(function (s) {
+        var key = s.relationship + '|' + s.attitude + '|' + s.predicate;
+        poolIndex[key] = s;
+    });
+
+    var selected_stimuli = [];
+    relationships.forEach(function (rel) {
+        attitudes.forEach(function (att) {
+            var pred = predicates[Math.floor(Math.random() * predicates.length)];
+            var key = rel + '|' + att + '|' + pred;
+            var s = poolIndex[key];
+            if (s) {
+                selected_stimuli.push(s);
+            } else {
+                console.warn('Missing stimulus for', key);
+            }
+        });
+    });
+
+    var shuffled_stimuli = jsPsych.randomization.shuffle(selected_stimuli);
+
+    console.log('shuffled_stimuli count:', shuffled_stimuli.length);
+    console.log('shuffled_stimuli:', shuffled_stimuli);
 
     var trials = shuffled_stimuli.map(function (s) {
-        var sentence_with_blank = s.sentence.replace('<modifier>', '<span class="blank">＿＿＿</span>');
+        var sentence_with_blank = s.text.replace('[modifier]', '<span class="blank">＿＿＿</span>');
         var collected_tags = [];
+        var feedback_text = '';
 
         var trial_html =
             '<p class="stimulus">' + sentence_with_blank + '</p>' +
@@ -64,18 +96,25 @@
             stimulus: trial_html,
             choices: ['Continue'],
             data: {
-                stimulus_id: s.id,
                 predicate: s.predicate,
-                context: s.context,
-                context_label: s.context_label,
-                sentence: s.sentence
+                attitude: s.attitude,
+                relationship: s.relationship,
+                sentence: s.text
             },
             on_load: function () {
                 var input = document.getElementById('tag-input');
                 var container = document.getElementById('tag-container');
+                var feedback_box = document.getElementById('feedback-box');
                 var continue_btn = document.querySelector('.jspsych-btn');
                 continue_btn.disabled = true;
                 input.focus();
+
+                // The trial's HTML is wiped from the page as soon as the response
+                // is recorded, before on_finish runs. So we track the feedback text
+                // live (on every keystroke) instead of reading the DOM at the end.
+                feedback_box.addEventListener('input', function () {
+                    feedback_text = feedback_box.value;
+                });
 
                 function render_tags() {
                     container.innerHTML = '';
@@ -119,11 +158,33 @@
             on_finish: function (data) {
                 data.modifier_response = collected_tags.join('; ');
                 data.modifier_response_list = collected_tags.slice();
-                var feedback_box = document.getElementById('feedback-box');
-                data.trial_feedback = feedback_box ? feedback_box.value.trim() : '';
+                data.trial_feedback = feedback_text.trim();
             }
         };
     });
+
+    // ---- DataPipe config ----
+    // Create a study at https://pipe.jspsych.org (backed by an OSF project) and paste
+    // its experiment ID below. Leave as-is (or blank) to skip DataPipe and only use
+    // the local CSV download.
+    var datapipe_experiment_id = 'PASTE_YOUR_DATAPIPE_ID_HERE';
+
+    function save_data_to_datapipe(filename, data_string) {
+        if (!datapipe_experiment_id || datapipe_experiment_id === 'PASTE_YOUR_DATAPIPE_ID_HERE') {
+            return Promise.resolve();
+        }
+        return fetch('https://pipe.jspsych.org/api/data/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                experimentID: datapipe_experiment_id,
+                filename: filename,
+                data: data_string
+            })
+        }).catch(function (err) {
+            console.error('DataPipe save failed, falling back to local download only.', err);
+        });
+    }
 
     var debrief = {
         type: jsPsychSurveyHtmlForm,
@@ -132,8 +193,13 @@
             '<textarea name="comments" rows="5" cols="50"></textarea>',
         button_label: 'Finish',
         on_finish: function () {
-            // No server backend on GitHub Pages: save data as a local CSV download.
-            jsPsych.data.get().localSave('csv', 'modifier_experiment_' + subject_id + '.csv');
+            var filename = 'modifier_experiment_' + subject_id + '.csv';
+            var csv_data = jsPsych.data.get().csv();
+            save_data_to_datapipe(filename, csv_data).finally(function () {
+                // Always also trigger a local download as a backup, in case DataPipe
+                // is unreachable or not yet configured.
+                jsPsych.data.get().localSave('csv', filename);
+            });
         }
     };
 
